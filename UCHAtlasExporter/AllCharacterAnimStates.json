@@ -1,0 +1,6864 @@
+[
+  {
+    "label": "Chicken",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "WhiteChicken_Idle",
+        "frames": [
+          "Chicken_Idle.000",
+          "Chicken_Idle.001",
+          "Chicken_Idle.002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "WhiteChicken_Flip",
+        "frames": [
+          "Chicken_Flip.000",
+          "Chicken_Flip.001"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "WhiteChicken_LookUp_GoingUp",
+        "frames": [
+          "Chicken_TransLookUp.000",
+          "Chicken_TransLookUp.001",
+          "Chicken_TransLookUp.002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "WhiteChicken_LookUp",
+        "frames": [
+          "Chicken_LookUp.000",
+          "Chicken_LookUp.001",
+          "Chicken_LookUp.002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "WhiteChicken_LookUp_Flip",
+        "frames": [
+          "Chicken_LookUpFlip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "WhiteChicken_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "WhiteChicken_Crouch_Down",
+        "frames": [
+          "Chicken_TransCrouch.000",
+          "Chicken_TransCrouch.001",
+          "Chicken_TransCrouch.002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "WhiteChicken_Crouch",
+        "frames": [
+          "Chicken_Crouch.000",
+          "Chicken_Crouch.001",
+          "Chicken_Crouch.002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "WhiteChicken_Crouch_Flip",
+        "frames": [
+          "Chicken_Crouch_Flip.000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "WhiteChicken_Crouch_Up",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "WhiteChicken_Walk",
+        "frames": [
+          "Chicken_Walk.000",
+          "Chicken_Walk.001",
+          "Chicken_Walk.002",
+          "Chicken_Walk.003",
+          "Chicken_Walk.004",
+          "Chicken_Walk.005",
+          "Chicken_Walk.006",
+          "Chicken_Walk.007"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "WhiteChicken_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "Run",
+        "clip": "WhiteChicken_Run",
+        "frames": [
+          "Chicken_Run.000",
+          "Chicken_Run.001",
+          "Chicken_Run.002",
+          "Chicken_Run.003",
+          "Chicken_Run.004",
+          "Chicken_Run.005"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "WhiteChicken_Run_TransRuntoJump",
+        "frames": [
+          "Chicken_RunToJump.000",
+          "Chicken_RunToJump.001"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "WhiteChicken_Jump_GoingUp",
+        "frames": [
+          "Chicken_JumpGoingUp.000",
+          "Chicken_JumpGoingUp.001",
+          "Chicken_JumpGoingUp.002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "WhiteChicken_Jump_TransUpToTop",
+        "frames": [
+          "Chicken_UpToTop.000",
+          "Chicken_UpToTop.001"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "WhiteChicken_Jump_Top",
+        "frames": [
+          "Chicken_JumpTop.000",
+          "Chicken_JumpTop.001",
+          "Chicken_JumpTop.002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "WhiteChicken_Jump_Flip",
+        "frames": [
+          "Chicken_JumpTopFlip.000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "WhiteChicken_Jump_TransTopToDown",
+        "frames": [
+          "Chicken_TopToDown.000",
+          "Chicken_TopToDown.001"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "WhiteChicken_Jump_GoingDown",
+        "frames": [
+          "Chicken_JumpGoingDown.000",
+          "Chicken_JumpGoingDown.001",
+          "Chicken_JumpGoingDown.002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "WhiteChicken_Jump_Land",
+        "frames": [
+          "Chicken_LandingSoft.000",
+          "Chicken_LandingSoft.001",
+          "Chicken_LandingSoft.002"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "WhiteChicken_Jump_Land_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "WhiteChicken_Jump_TransTopToSlide",
+        "frames": [
+          "Chicken_TopToWallSlide.000",
+          "Chicken_TopToWallSlide.001"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "WhiteChicken_Slide",
+        "frames": [
+          "Chicken_WallSlide.000",
+          "Chicken_WallSlide.001",
+          "Chicken_WallSlide.002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "WhiteChicken_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "WhiteChicken_Slide_ToJumpUpTwist",
+        "frames": [
+          "Chicken_WallSlideToJumpUpTwist.000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "WhiteChicken_Jump_TransToSlideOtherDirection",
+        "frames": [
+          "Chicken_ToWallSlide_OppositeStart.000",
+          "Chicken_ToWallSlide_OppositeStart.001"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "WhiteChicken_Slide_ToJump",
+        "frames": [
+          "Chicken_SlideToGroundMIrrored.001",
+          "Chicken_SlideToGroundMIrrored.000"
+        ]
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "WhiteChicken_Slide_ToGroundMirror",
+        "frames": []
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "WhiteChicken_Slide_ToGround",
+        "frames": []
+      },
+      {
+        "state": "DeadShock",
+        "clip": "WhiteChicken_Dead_Shock",
+        "frames": [
+          "Chicken_DeathShock.000",
+          "Chicken_DeathShock.001",
+          "Chicken_DeathShock.002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "WhiteChicken_Dead_Shock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "WhiteChicken_Dead_Rise",
+        "frames": [
+          "Chicken_Dead_Rising.000",
+          "Chicken_Dead_Rising.001",
+          "Chicken_Dead_Rising.002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "WhiteChicken_Dead_MidToRise",
+        "frames": [
+          "Chicken_Dead_RisingToMid.000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "WhiteChicken_Dead_Mid",
+        "frames": [
+          "Chicken_Dead_MidAir.000",
+          "Chicken_Dead_MidAir.001",
+          "Chicken_Dead_MidAir.002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "WhiteChicken_Dead_FallToMid",
+        "frames": [
+          "Chicken_Dead_MidAirToFalling.000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "WhiteChicken_Dead_Fall",
+        "frames": [
+          "Chicken_DeadFalling.000",
+          "Chicken_DeadFalling.001",
+          "Chicken_DeadFalling.002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "WhiteChicken_Dying",
+        "frames": [
+          "Chickendie.000",
+          "Chickendie.001",
+          "Chickendie.002",
+          "Chickendie.003",
+          "Chickendie.004"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "WhiteChicken_Dead",
+        "frames": []
+      },
+      {
+        "state": "Dance",
+        "clip": "WhiteChicken_Dance",
+        "frames": [
+          "Chicken_Victory.000",
+          "Chicken_Victory.001",
+          "Chicken_Victory.002",
+          "Chicken_Victory.003",
+          "Chicken_Victory.004",
+          "Chicken_Victory.005",
+          "Chicken_Victory.006",
+          "Chicken_Victory.007",
+          "Chicken_Victory.008",
+          "Chicken_Victory.009",
+          "Chicken_Victory.010",
+          "Chicken_Victory.011"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "WhiteChicken_Dance_Flip",
+        "frames": [
+          "Chicken_Victory_Flip.000"
+        ]
+      },
+      {
+        "state": "Sit",
+        "clip": "WhiteChicken_Sit",
+        "frames": [
+          "Chicken_Couch.000",
+          "Chicken_Couch.001",
+          "Chicken_Couch.002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "ChickenCursor.000",
+      "Bad Cursor": "ChickenCursor.001",
+      "Notebook Cursor": "ChickenCursor.002",
+      "Portrait": "ChickenPortrait.000"
+    },
+    "unused_frames": [],
+    "frame_states": {
+      "Chicken_Idle.000": [
+        "Idle",
+        "toIdle"
+      ],
+      "Chicken_Idle.001": [
+        "Idle",
+        "toIdle"
+      ],
+      "Chicken_TransLookUp.000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Chicken_TransLookUp.001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Chicken_TransLookUp.002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Chicken_TransCrouch.000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Chicken_TransCrouch.001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Chicken_TransCrouch.002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Chicken_JumpTopFlip.000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Chicken_LandingSoft.000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Chicken_LandingSoft.001": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Chicken_LandingSoft.002": [
+        "JumpLand",
+        "JumpLand To Idle",
+        "SlideToGroundTwist"
+      ],
+      "Chicken_TopToWallSlide.000": [
+        "TransToSlide",
+        "SlideToGroundTwist"
+      ],
+      "Chicken_SlideToGroundMIrrored.001": [
+        "SlideToJump",
+        "SlideToGroundMirror"
+      ],
+      "Chicken_SlideToGroundMIrrored.000": [
+        "SlideToJump",
+        "SlideToGroundMirror"
+      ],
+      "Chicken_DeathShock.000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Chicken_DeathShock.001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Chicken_DeathShock.002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Chickendie.004": [
+        "Dying",
+        "DeadPause"
+      ]
+    },
+    "outfit_metadata": {
+      "mohawk_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "overalls_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "football_helmet_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "arara_": {
+        "BehindLayer": false,
+        "LayerNumber": 0
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 3
+      }
+    }
+  },
+  {
+    "label": "Horse",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "Horse_Idle",
+        "frames": [
+          "Horse_Idle.000",
+          "Horse_Idle.001",
+          "Horse_Idle.002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "Horse_Flip",
+        "frames": [
+          "Horse_Flip.000",
+          "Horse_Flip.001",
+          "Horse_Flip.002"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "Horse_LookUp_GoingUp",
+        "frames": [
+          "Horse_TransLookUp.000",
+          "Horse_TransLookUp.001",
+          "Horse_TransLookUp.002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "Horse_LookUp",
+        "frames": [
+          "Horse_LookUp.000",
+          "Horse_LookUp.001",
+          "Horse_LookUp.002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "Horse_Lookup_Flip",
+        "frames": [
+          "Horse_LookUpTransition.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "Horse_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "Horse_Crouch_GoingDown",
+        "frames": [
+          "Horse_TransCrouch.000",
+          "Horse_TransCrouch.001",
+          "Horse_TransCrouch.002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "Horse_Crouch",
+        "frames": [
+          "Horse_Crouch.000",
+          "Horse_Crouch.001",
+          "Horse_Crouch.002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "Horse_CrouchFlip",
+        "frames": [
+          "Horse_CrouchFlip.000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "Horse_Crouch_GoingUp",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "Horse_Walk",
+        "frames": [
+          "Horse_Walk.000",
+          "Horse_Walk.001",
+          "Horse_Walk.002",
+          "Horse_Walk.003",
+          "Horse_Walk.004",
+          "Horse_Walk.005",
+          "Horse_Walk.006",
+          "Horse_Walk.007"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "Horse_Idle",
+        "frames": []
+      },
+      {
+        "state": "Run",
+        "clip": "Horse_Run",
+        "frames": [
+          "Horse_Run.000",
+          "Horse_Run.001",
+          "Horse_Run.002",
+          "Horse_Run.003",
+          "Horse_Run.004",
+          "Horse_Run.005",
+          "Horse_Run.006",
+          "Horse_Run.007"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "Horse_Run_ToJump",
+        "frames": [
+          "Horse_RunToJump.000",
+          "Horse_RunToJump.001"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "Horse_Jump",
+        "frames": [
+          "Horse_JumpingUp.000",
+          "Horse_JumpingUp.001",
+          "Horse_JumpingUp.002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "Horse_Jump_UpToTop",
+        "frames": [
+          "Horse_UpToTop.000",
+          "Horse_UpToTop.001",
+          "Horse_UpToTop.002"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "Horse_Jump_Top",
+        "frames": [
+          "Horse_JumpingTop.000",
+          "Horse_JumpingTop.001",
+          "Horse_JumpingTop.002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "Horse_Jump_Flip",
+        "frames": [
+          "Horse_JumpFlip.000",
+          "Horse_JumpFlip.001"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "Horse_Jump_TopToDown",
+        "frames": [
+          "Horse_TopToDown.000",
+          "Horse_TopToDown.001",
+          "Horse_TopToDown.002"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "Horse_Jump_GoingDown",
+        "frames": [
+          "Horse_JumpingDown.000",
+          "Horse_JumpingDown.001",
+          "Horse_JumpingDown.002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "Horse_Jump_Land",
+        "frames": [
+          "Horse_LandingSoft.000",
+          "Horse_LandingSoft.001",
+          "Horse_LandingSoft.002"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "Horse_Jump_Land",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "Horse_Jump_TopToSlide",
+        "frames": [
+          "Horse_ToWallSlide.000",
+          "Horse_ToWallSlide.001"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "Horse_Slide",
+        "frames": [
+          "HorseWallSlide.000",
+          "HorseWallSlide.001",
+          "HorseWallSlide.002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "Horse_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "Horse_Slide_WallSlideToJumpUpTwist",
+        "frames": [
+          "Horse_WallSLideToJumpUpTwist.000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "Horse_Jump_TopToSlide_Opposite",
+        "frames": [
+          "Horse_TopToWallSlide_Opposite.000",
+          "Horse_TopToWallSlide_Opposite.001"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "Horse_Slide_ToJump",
+        "frames": [
+          "Horse_TopToWallSlide_Opposite_Mirror.001",
+          "Horse_TopToWallSlide_Opposite_Mirror.000"
+        ]
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "Horse_Slide_ToGround_Opposite",
+        "frames": []
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "Horse_Slide_ToGround",
+        "frames": []
+      },
+      {
+        "state": "DeadShock",
+        "clip": "Horse_Dead_Shock",
+        "frames": [
+          "Horse_DeadShock.000",
+          "Horse_DeadShock.001",
+          "Horse_DeadShock.002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "Horse_Dead_Shock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "Horse_Dead_Rise",
+        "frames": [
+          "Horse_Dead_Rise.000",
+          "Horse_Dead_Rise.001",
+          "Horse_Dead_Rise.002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "Horse_Dead_MidToRise",
+        "frames": [
+          "Horse_Dead_MidToRise.000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "Horse_Dead_Mid",
+        "frames": [
+          "Horse_Dead_Mid.000",
+          "Horse_Dead_Mid.001",
+          "Horse_Dead_Mid.002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "Horse_Dead_MidToFall",
+        "frames": [
+          "Horse_Dead_MidToFall.000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "Horse_Dead_Fall",
+        "frames": [
+          "Horse_DeadFall.000",
+          "Horse_DeadFall.001",
+          "Horse_DeadFall.002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "Horse_Dying",
+        "frames": [
+          "Horse_Dead.001",
+          "Horse_Dead.002",
+          "Horse_Dead.003"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "Horse_Dead",
+        "frames": []
+      },
+      {
+        "state": "Dance",
+        "clip": "Horse_Dance",
+        "frames": [
+          "Horse_Victory.000",
+          "Horse_Victory.001",
+          "Horse_Victory.002",
+          "Horse_Victory.003",
+          "Horse_Victory.004",
+          "Horse_Victory.005",
+          "Horse_Victory.006",
+          "Horse_Victory.007"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "Horse_Dance_Flip",
+        "frames": [
+          "Horse_VictoryFlip.000"
+        ]
+      },
+      {
+        "state": "Sit",
+        "clip": "Horse_Sit",
+        "frames": [
+          "Horse_Couch.000",
+          "Horse_Couch.001",
+          "Horse_Couch.002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "HorseCursor.000",
+      "Bad Cursor": "HorseCursor.001",
+      "Notebook Cursor": "HorseCursor.002",
+      "Portrait": "HorsePortrait.000"
+    },
+    "unused_frames": [
+      "Horse_Dead.000"
+    ],
+    "frame_states": {
+      "Horse_Idle.000": [
+        "Idle",
+        "toIdle"
+      ],
+      "Horse_Idle.001": [
+        "Idle",
+        "toIdle"
+      ],
+      "Horse_Idle.002": [
+        "Idle",
+        "toIdle"
+      ],
+      "Horse_TransLookUp.000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Horse_TransLookUp.001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Horse_TransLookUp.002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Horse_TransCrouch.000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Horse_TransCrouch.001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Horse_TransCrouch.002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Horse_JumpFlip.000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Horse_JumpFlip.001": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Horse_LandingSoft.000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Horse_LandingSoft.001": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Horse_LandingSoft.002": [
+        "JumpLand",
+        "JumpLand To Idle",
+        "SlideToGroundTwist"
+      ],
+      "Horse_ToWallSlide.000": [
+        "TransToSlide",
+        "SlideToGroundTwist"
+      ],
+      "Horse_TopToWallSlide_Opposite_Mirror.001": [
+        "SlideToJump",
+        "SlideToGroundMirror"
+      ],
+      "Horse_TopToWallSlide_Opposite_Mirror.000": [
+        "SlideToJump",
+        "SlideToGroundMirror"
+      ],
+      "Horse_DeadShock.000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Horse_DeadShock.001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Horse_DeadShock.002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Horse_Dead.003": [
+        "Dying",
+        "DeadPause"
+      ]
+    },
+    "outfit_metadata": {
+      "hat_": {
+        "BehindLayer": false,
+        "LayerNumber": 3
+      },
+      "bowtie_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "zebra_": {
+        "BehindLayer": false,
+        "LayerNumber": 0
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 3
+      },
+      "raceday_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      }
+    }
+  },
+  {
+    "label": "Sheep",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "Sheep_Idle",
+        "frames": [
+          "Sheep_Idle.000",
+          "Sheep_Idle.001",
+          "Sheep_Idle.002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "Sheep_Flip",
+        "frames": [
+          "Sheep_Flip.001",
+          "Sheep_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "Sheep_LookUp_GoingUp",
+        "frames": [
+          "Sheep_TransLookUp.000",
+          "Sheep_TransLookUp.001",
+          "Sheep_TransLookUp.002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "Sheep_LookUp",
+        "frames": [
+          "Sheep_LookUp.000",
+          "Sheep_LookUp.001",
+          "Sheep_LookUp.002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "Sheep_Lookup_Flip",
+        "frames": [
+          "Sheep_LookUp_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "Sheep_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "Sheep_Crouch_Down",
+        "frames": [
+          "Sheep_CrouchTrans.000",
+          "Sheep_CrouchTrans.001",
+          "Sheep_CrouchTrans.002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "Sheep_Crouch",
+        "frames": [
+          "Sheep_Crouch.000",
+          "Sheep_Crouch.001",
+          "Sheep_Crouch.002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "Sheep_Crouch_Flip",
+        "frames": [
+          "Sheep_Crouch_flip.000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "Sheep_Crouch_Up",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "Sheep_Walk",
+        "frames": [
+          "Sheep_Walk.000",
+          "Sheep_Walk.001",
+          "Sheep_Walk.002",
+          "Sheep_Walk.003",
+          "Sheep_Walk.004",
+          "Sheep_Walk.005",
+          "Sheep_Walk.006",
+          "Sheep_Walk.007",
+          "Sheep_Walk.008",
+          "Sheep_Walk.009",
+          "Sheep_Walk.010"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "Sheep_Idle",
+        "frames": []
+      },
+      {
+        "state": "Run",
+        "clip": "Sheep_Run",
+        "frames": [
+          "Sheep_Run.000",
+          "Sheep_Run.001",
+          "Sheep_Run.002",
+          "Sheep_Run.003",
+          "Sheep_Run.004",
+          "Sheep_Run.005",
+          "Sheep_Run.006",
+          "Sheep_Run.007"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "Sheep_RunToJump",
+        "frames": [
+          "Sheep_RunToJump.000",
+          "Sheep_RunToJump.001",
+          "Sheep_RunToJump.002"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "Sheep_Jump_GoingUp",
+        "frames": [
+          "SheepGoingUp.000",
+          "SheepGoingUp.001",
+          "SheepGoingUp.002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "Sheep_Jump_UpToTop",
+        "frames": [
+          "Sheep_UpToTop.000",
+          "Sheep_UpToTop.001",
+          "Sheep_UpToTop.002"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "Sheep_Jump_Top",
+        "frames": [
+          "Sheep_JumpTop.000",
+          "Sheep_JumpTop.001",
+          "Sheep_JumpTop.002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "Sheep_Jump_Flip",
+        "frames": [
+          "Sheep_JumpTop_Flip.000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "Sheep_Jump_TransTopToDown",
+        "frames": [
+          "Sheep_TopToDown.000",
+          "Sheep_TopToDown.001",
+          "Sheep_TopToDown.002"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "Sheep_Jump_GoingDown",
+        "frames": [
+          "Sheep_JumpFall.000",
+          "Sheep_JumpFall.001",
+          "Sheep_JumpFall.002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "Sheep_Land",
+        "frames": [
+          "Sheep_LandingSoft.000",
+          "Sheep_LandingSoft.001"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "Sheep_Land",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "Sheep_Jump_TransTopToWallsidle",
+        "frames": [
+          "Sheep_TopToWallSlide.000",
+          "Sheep_TopToWallSlide.001"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "Sheep_Slide",
+        "frames": [
+          "Sheep_Wallslide.000",
+          "Sheep_Wallslide.001",
+          "Sheep_Wallslide.002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "Sheep_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "Sheep_Slide_ToJumpUpTwist",
+        "frames": [
+          "Sheep_WalltoJumpUpTwist.000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "Sheep_Jump_TransTopToWallsideOpposite",
+        "frames": [
+          "Sheep_TopToWallSlide_Twist.000",
+          "Sheep_TopToWallSlide_Twist.001"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "Sheep_Slide_ToJump",
+        "frames": [
+          "Sheep_TopToWallSlide_Twist_Mirror.001",
+          "Sheep_TopToWallSlide_Twist_Mirror.000"
+        ]
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "Sheep_Slide_ToGround_Mirror",
+        "frames": []
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "Sheep_Slide_ToGround",
+        "frames": []
+      },
+      {
+        "state": "DeadShock",
+        "clip": "Sheep_Dead_Shock",
+        "frames": [
+          "Sheep_Death_Shock.000",
+          "Sheep_Death_Shock.001",
+          "Sheep_Death_Shock.002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "Sheep_Dead_Shock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "Sheep_Dead_Rise",
+        "frames": [
+          "Sheep_Dead_Rise.000",
+          "Sheep_Dead_Rise.001",
+          "Sheep_Dead_Rise.002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "Sheep_Dead_MidToRise",
+        "frames": [
+          "Sheep_Dead_MidToRise.000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "Sheep_Dead_Mid",
+        "frames": [
+          "Sheep_Dead_Mid.000",
+          "Sheep_Dead_Mid.001",
+          "Sheep_Dead_Mid.002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "Sheep_Dead_MidToFall",
+        "frames": [
+          "Sheep_Dead_MidToFall.000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "Sheep_Dead_Fall",
+        "frames": [
+          "Sheep_Dead_Fall.000",
+          "Sheep_Dead_Fall.001",
+          "Sheep_Dead_Fall.002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "Sheep_Dying",
+        "frames": [
+          "Sheep_Die.000",
+          "Sheep_Die.001",
+          "Sheep_Die.002"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "Sheep_Dead",
+        "frames": []
+      },
+      {
+        "state": "Dance",
+        "clip": "Sheep_Dance",
+        "frames": [
+          "Sheep_Victory.000",
+          "Sheep_Victory.001",
+          "Sheep_Victory.002",
+          "Sheep_Victory.003",
+          "Sheep_Victory.004",
+          "Sheep_Victory.005",
+          "Sheep_Victory.006",
+          "Sheep_Victory.007"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "Sheep_Dance_Flip",
+        "frames": [
+          "Sheep_Victory_Flip.000"
+        ]
+      },
+      {
+        "state": "Sit",
+        "clip": "Sheep_Sit",
+        "frames": [
+          "Sheep_Couch.000",
+          "Sheep_Couch.001",
+          "Sheep_Couch.002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "SheepCursor.000",
+      "Bad Cursor": "SheepCursor.001",
+      "Notebook Cursor": "SheepCursor.002",
+      "Portrait": "SheepPortrait.000"
+    },
+    "unused_frames": [],
+    "frame_states": {
+      "Sheep_Idle.000": [
+        "Idle",
+        "toIdle"
+      ],
+      "Sheep_Idle.001": [
+        "Idle",
+        "toIdle"
+      ],
+      "Sheep_Idle.002": [
+        "Idle",
+        "toIdle"
+      ],
+      "Sheep_TransLookUp.000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Sheep_TransLookUp.001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Sheep_TransLookUp.002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Sheep_CrouchTrans.000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Sheep_CrouchTrans.001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Sheep_CrouchTrans.002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Sheep_JumpTop_Flip.000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Sheep_LandingSoft.000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Sheep_LandingSoft.001": [
+        "JumpLand",
+        "JumpLand To Idle",
+        "SlideToGroundTwist"
+      ],
+      "Sheep_TopToWallSlide.000": [
+        "TransToSlide",
+        "SlideToGroundTwist"
+      ],
+      "Sheep_TopToWallSlide_Twist_Mirror.001": [
+        "SlideToJump",
+        "SlideToGroundMirror"
+      ],
+      "Sheep_TopToWallSlide_Twist_Mirror.000": [
+        "SlideToJump",
+        "SlideToGroundMirror"
+      ],
+      "Sheep_Death_Shock.000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Sheep_Death_Shock.001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Sheep_Death_Shock.002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Sheep_Die.002": [
+        "Dying",
+        "DeadPause"
+      ]
+    },
+    "outfit_metadata": {
+      "partyhat_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "sash_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "sunglasses_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 3
+      },
+      "ram_": {
+        "BehindLayer": false,
+        "LayerNumber": 0
+      }
+    }
+  },
+  {
+    "label": "Raccoon",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "Raccoon_Idle",
+        "frames": [
+          "Raccoon_Idle.000",
+          "Raccoon_Idle.001",
+          "Raccoon_Idle.002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "Raccoon_Flip",
+        "frames": [
+          "Raccoon_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "Raccoon_Lookup_GoingUp",
+        "frames": [
+          "Raccoon_LookUpTrans.002",
+          "Raccoon_LookUpTrans.001",
+          "Raccoon_LookUpTrans.000"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "Raccoon_LookUp",
+        "frames": [
+          "Raccoon_LookUp.000",
+          "Raccoon_LookUp.001",
+          "Raccoon_LookUp.002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "Raccoon_Lookup_Flip",
+        "frames": [
+          "Raccoon_LookUp_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "Raccoon_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "Raccoon_Crouch_Down",
+        "frames": [
+          "Raccoon_CrouchTrans.000",
+          "Raccoon_CrouchTrans.001"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "Raccoon_Crouch",
+        "frames": [
+          "Raccoon_Crouch.000",
+          "Raccoon_Crouch.001",
+          "Raccoon_Crouch.002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "Raccoon_Crouch_Flip",
+        "frames": [
+          "Raccoon_Crouch_Flip.000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "Raccoon_Crouch_Up",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "Raccoon_Walk",
+        "frames": [
+          "Raccoon_Walk.000",
+          "Raccoon_Walk.001",
+          "Raccoon_Walk.002",
+          "Raccoon_Walk.003",
+          "Raccoon_Walk.004",
+          "Raccoon_Walk.005",
+          "Raccoon_Walk.006",
+          "Raccoon_Walk.007"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "Raccoon_Idle",
+        "frames": []
+      },
+      {
+        "state": "Run",
+        "clip": "Raccoon_Run",
+        "frames": [
+          "Raccoon_run.000",
+          "Raccoon_run.001",
+          "Raccoon_run.002",
+          "Raccoon_run.003",
+          "Raccoon_run.004",
+          "Raccoon_run.005",
+          "Raccoon_run.006",
+          "Raccoon_run.007"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "Raccoon_Run_TransRunToJump",
+        "frames": [
+          "Raccoon_RunToUp.000",
+          "Raccoon_RunToUp.001"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "Raccoon_Jump_GoingUp",
+        "frames": [
+          "Raccoon_JumpUp.000",
+          "Raccoon_JumpUp.001",
+          "Raccoon_JumpUp.002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "Raccoon_Jump_TransUpToTop",
+        "frames": [
+          "Raccoon_UpToTop.000",
+          "Raccoon_UpToTop.001",
+          "Raccoon_UpToTop.002"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "Raccoon_Jump_Top",
+        "frames": [
+          "Raccoon_JumpTop.000",
+          "Raccoon_JumpTop.001",
+          "Raccoon_JumpTop.002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "Raccoon_Jump_Flip",
+        "frames": [
+          "Raccoon_JumpTop_Flip.000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "Raccoon_Jump_TransTopToDown",
+        "frames": [
+          "Raccoon_TopToDown.000",
+          "Raccoon_TopToDown.001",
+          "Raccoon_TopToDown.002"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "Raccoon_Jump_GoingDown",
+        "frames": [
+          "Raccoon_JumpDown.000",
+          "Raccoon_JumpDown.001",
+          "Raccoon_JumpDown.002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "Raccoon_Jump_Land",
+        "frames": [
+          "Raccoon_Land.000",
+          "Raccoon_Land.001",
+          "Raccoon_Land.002"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "Raccoon_Jump_Land",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "Raccoon_Jump_TransTopToSlide",
+        "frames": [
+          "Raccoon_TopToWallSlide.000",
+          "Raccoon_TopToWallSlide.001",
+          "Raccoon_TopToWallSlide.002"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "Raccoon_Slide",
+        "frames": [
+          "Raccoon_WallSlide.000",
+          "Raccoon_WallSlide.001",
+          "Raccoon_WallSlide.002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "Raccoon_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "Raccoon_Slide_ToJumpUpTwist",
+        "frames": [
+          "Raccoon_WallSlideToJump_Twist.000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "Raccoon_Jump_TransTopToSlide_OtherDirection",
+        "frames": [
+          "Raccoon_TopToWallSlide_Opposite.000",
+          "Raccoon_TopToWallSlide_Opposite.001",
+          "Raccoon_TopToWallSlide_Opposite.002"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "Raccoon_Slide_ToJump",
+        "frames": []
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "Raccoon_Slide_ToGroundMirror",
+        "frames": [
+          "Raccoon_TopToWallSlide_Mirror.002",
+          "Raccoon_TopToWallSlide_Mirror.001",
+          "Raccoon_TopToWallSlide_Mirror.000"
+        ]
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "Raccoon_Slide_ToGround",
+        "frames": []
+      },
+      {
+        "state": "DeadShock",
+        "clip": "Raccoon_Dead_Shock",
+        "frames": [
+          "Raccoon_DeadShock.000",
+          "Raccoon_DeadShock.001",
+          "Raccoon_DeadShock.002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "Raccoon_Dead_Shock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "Raccoon_Dead_Rise",
+        "frames": [
+          "Raccoon_Dead_Rise.000",
+          "Raccoon_Dead_Rise.001",
+          "Raccoon_Dead_Rise.002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "Raccoon_Dead_MidToRise",
+        "frames": [
+          "Raccoon_Dead_MidToRise.000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "Raccoon_Dead_Mid",
+        "frames": [
+          "Raccoon_Dead_Mid.000",
+          "Raccoon_Dead_Mid.001",
+          "Raccoon_Dead_Mid.002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "Raccoon_Dead_MidToFall",
+        "frames": [
+          "Raccoon_Dead_MidToFall.000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "Raccoon_Dead_Fall",
+        "frames": [
+          "Raccoon_DeadFall.000",
+          "Raccoon_DeadFall.001",
+          "Raccoon_DeadFall.002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "Raccoon_Dying",
+        "frames": [
+          "Raccoon_Die.000",
+          "Raccoon_Die.001",
+          "Raccoon_Die.002"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "Raccoon_Dead",
+        "frames": []
+      },
+      {
+        "state": "Dance",
+        "clip": "Raccoon_Dance",
+        "frames": [
+          "Raccoon_Victory.000",
+          "Raccoon_Victory.001",
+          "Raccoon_Victory.002",
+          "Raccoon_Victory.003",
+          "Raccoon_Victory.004",
+          "Raccoon_Victory.005"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "Raccoon_Dance_Flip",
+        "frames": [
+          "Raccoon_Victory_Flip.000"
+        ]
+      },
+      {
+        "state": "Sit",
+        "clip": "Raccoon_Sit",
+        "frames": [
+          "Raccoon_Couch.000",
+          "Raccoon_Couch.001",
+          "Raccoon_Couch.002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "RaccoonCursor.000",
+      "Bad Cursor": "RaccoonCursor.001",
+      "Notebook Cursor": "RaccoonCursor.002",
+      "Portrait": "RaccoonPortrait.000"
+    },
+    "unused_frames": [],
+    "frame_states": {
+      "Raccoon_Idle.000": [
+        "Idle",
+        "toIdle"
+      ],
+      "Raccoon_Idle.001": [
+        "Idle",
+        "toIdle"
+      ],
+      "Raccoon_Idle.002": [
+        "Idle",
+        "toIdle"
+      ],
+      "Raccoon_LookUpTrans.002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Raccoon_LookUpTrans.001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Raccoon_LookUpTrans.000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Raccoon_CrouchTrans.000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Raccoon_CrouchTrans.001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Raccoon_JumpUp.000": [
+        "Rising",
+        "SlideToJump"
+      ],
+      "Raccoon_JumpUp.001": [
+        "Rising",
+        "SlideToJump"
+      ],
+      "Raccoon_JumpUp.002": [
+        "Rising",
+        "SlideToJump"
+      ],
+      "Raccoon_JumpTop_Flip.000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Raccoon_Land.000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Raccoon_Land.001": [
+        "JumpLand",
+        "JumpLand To Idle",
+        "SlideToGroundTwist"
+      ],
+      "Raccoon_Land.002": [
+        "JumpLand",
+        "JumpLand To Idle",
+        "SlideToGroundTwist"
+      ],
+      "Raccoon_TopToWallSlide.000": [
+        "TransToSlide",
+        "SlideToGroundTwist"
+      ],
+      "Raccoon_TopToWallSlide.001": [
+        "TransToSlide",
+        "SlideToGroundTwist"
+      ],
+      "Raccoon_TopToWallSlide.002": [
+        "TransToSlide",
+        "SlideToGroundTwist"
+      ],
+      "Raccoon_DeadShock.000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Raccoon_DeadShock.001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Raccoon_DeadShock.002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Raccoon_Die.002": [
+        "Dying",
+        "DeadPause"
+      ]
+    },
+    "outfit_metadata": {
+      "tie_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "crown_": {
+        "BehindLayer": true,
+        "LayerNumber": 1
+      },
+      "hoodie_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "redpanda_": {
+        "BehindLayer": false,
+        "LayerNumber": 0
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 3
+      }
+    }
+  },
+  {
+    "label": "Chameleon",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "Chameleon_Idle",
+        "frames": [
+          "Chameleon_Idle.000",
+          "Chameleon_Idle.001",
+          "Chameleon_Idle.002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "Chameleon_Flip",
+        "frames": [
+          "Chameleon_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "Chameleon_LookUp_GoingUp",
+        "frames": [
+          "Chameleon_TransLookUp.000",
+          "Chameleon_TransLookUp.001",
+          "Chameleon_TransLookUp.002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "Chameleon_LookUp",
+        "frames": [
+          "Chameleon_LookUp.000",
+          "Chameleon_LookUp.001",
+          "Chameleon_LookUp.002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "Chameleon_Lookup_Flip",
+        "frames": [
+          "Chameleon_LookUpFlip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "Chameleon_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "Chameleon_Crouch_GoingDown",
+        "frames": [
+          "Chameleon_TransCrouch.000",
+          "Chameleon_TransCrouch.001",
+          "Chameleon_TransCrouch.002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "Chameleon_Crouch",
+        "frames": [
+          "Chameleon_Crouch.000",
+          "Chameleon_Crouch.001",
+          "Chameleon_Crouch.002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "Chameleon_CrouchFlip",
+        "frames": [
+          "Chameleon_Crouch_Flip.000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "Chameleon_Crouch_GoingUp",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "Chameleon_Walk",
+        "frames": [
+          "Chameleon_Walk.003",
+          "Chameleon_Walk.004",
+          "Chameleon_Walk.005",
+          "Chameleon_Walk.006",
+          "Chameleon_Walk.007",
+          "Chameleon_Walk.000",
+          "Chameleon_Walk.001",
+          "Chameleon_Walk.002"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "Chameleon_ToIdle",
+        "frames": [
+          "Chameleon_WalkToIdle.000",
+          "Chameleon_WalkToIdle.001"
+        ]
+      },
+      {
+        "state": "Run",
+        "clip": "Chameleon_Run",
+        "frames": [
+          "Chameleon_Run.002",
+          "Chameleon_Run.003",
+          "Chameleon_Run.004",
+          "Chameleon_Run.005",
+          "Chameleon_Run.000",
+          "Chameleon_Run.001"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "Chameleon_Run_ToJump",
+        "frames": [
+          "Chameleon_RunToJump.000",
+          "Chameleon_RunToJump.001"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "Chameleon_Jump",
+        "frames": [
+          "Chameleon_JumpGoingUp.000",
+          "Chameleon_JumpGoingUp.001",
+          "Chameleon_JumpGoingUp.002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "Chameleon_Jump_UpToTop",
+        "frames": [
+          "Chameleon_UpToTop.000",
+          "Chameleon_UpToTop.001",
+          "Chameleon_UpToTop.002"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "Chameleon_Jump_Top",
+        "frames": [
+          "Chameleon_JumpTop.000",
+          "Chameleon_JumpTop.001",
+          "Chameleon_JumpTop.002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "Chameleon_Jump_Flip",
+        "frames": [
+          "Chameleon_JumpTopFlip.000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "Chameleon_Jump_TopToDown",
+        "frames": [
+          "Chameleon_TopToDown.000",
+          "Chameleon_TopToDown.001",
+          "Chameleon_TopToDown.002"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "Chameleon_Jump_GoingDown",
+        "frames": [
+          "Chameleon_JumpGoingDown.000",
+          "Chameleon_JumpGoingDown.001",
+          "Chameleon_JumpGoingDown.002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "Chameleon_Jump_Land",
+        "frames": [
+          "Chameleon_LandingSoft.000",
+          "Chameleon_LandingSoft.001",
+          "Chameleon_LandingSoft.002"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "Chameleon_Jump_Land",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "Chameleon_Jump_TopToSlide",
+        "frames": [
+          "Chameleon_TopToWallSlide.000",
+          "Chameleon_TopToWallSlide.001"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "Chameleon_Slide",
+        "frames": [
+          "Chameleon_WallSlide.000",
+          "Chameleon_WallSlide.001",
+          "Chameleon_WallSlide.002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "Chameleon_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "Chameleon_Slide_WallSlideToJumpUpTwist",
+        "frames": [
+          "Chameleon_WallSlideToJumpUpTwist.000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "Chameleon_Jump_TopToSlide_Opposite",
+        "frames": [
+          "Chameleon_ToWallSlide_OppositeStart.000",
+          "Chameleon_ToWallSlide_OppositeStart.001"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "Chameleon_Slide_ToJump",
+        "frames": [
+          "Chameleon_ToWallSlide_Opposite_MIrror.001",
+          "Chameleon_ToWallSlide_Opposite_MIrror.000"
+        ]
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "Chameleon_Slide_ToGround_Opposite",
+        "frames": []
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "Chameleon_Slide_ToGround",
+        "frames": []
+      },
+      {
+        "state": "DeadShock",
+        "clip": "Chameleon_Dead_Shock",
+        "frames": [
+          "Chameleon_DeathShock.001",
+          "Chameleon_DeathShock.002",
+          "Chameleon_DeathShock.003"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "Chameleon_Dead_Shock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "Chameleon_Dead_Rise",
+        "frames": [
+          "Chameleon_Dead_Rising.000",
+          "Chameleon_Dead_Rising.001",
+          "Chameleon_Dead_Rising.002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "Chameleon_Dead_MidToRise",
+        "frames": [
+          "Chameleon_Dead_RisingToMid.000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "Chameleon_Dead_Mid",
+        "frames": [
+          "Chameleon_Dead_MidAir.000",
+          "Chameleon_Dead_MidAir.001",
+          "Chameleon_Dead_MidAir.002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "Chameleon_Dead_MidToFall",
+        "frames": [
+          "Chameleon_Dead_MidAirToFalling.000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "Chameleon_Dead_Fall",
+        "frames": [
+          "Chameleon_DeadFalling.000",
+          "Chameleon_DeadFalling.001",
+          "Chameleon_DeadFalling.002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "Chameleon_Dying",
+        "frames": [
+          "Chameleondie.000",
+          "Chameleondie.001",
+          "Chameleondie.002",
+          "Chameleondie.003",
+          "Chameleondie.004"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "Chameleon_Dead",
+        "frames": []
+      },
+      {
+        "state": "Dance",
+        "clip": "Chameleon_Dance",
+        "frames": [
+          "Chameleon_Victory.000",
+          "Chameleon_Victory.001",
+          "Chameleon_Victory.002",
+          "Chameleon_Victory.003",
+          "Chameleon_Victory.004",
+          "Chameleon_Victory.005",
+          "Chameleon_Victory.006",
+          "Chameleon_Victory.007",
+          "Chameleon_Victory.008",
+          "Chameleon_Victory.009",
+          "Chameleon_Victory.010",
+          "Chameleon_Victory.011",
+          "Chameleon_Victory.012",
+          "Chameleon_Victory.013",
+          "Chameleon_Victory.014",
+          "Chameleon_Victory.015",
+          "Chameleon_Victory.016",
+          "Chameleon_Victory.017",
+          "Chameleon_Victory.018",
+          "Chameleon_Victory.019",
+          "Chameleon_Victory.020",
+          "Chameleon_Victory.021",
+          "Chameleon_Victory.022",
+          "Chameleon_Victory.023",
+          "Chameleon_Victory.024",
+          "Chameleon_Victory.025",
+          "Chameleon_Victory.026",
+          "Chameleon_Victory.027",
+          "Chameleon_Victory.028",
+          "Chameleon_Victory.029",
+          "Chameleon_Victory.030",
+          "Chameleon_Victory.031",
+          "Chameleon_Victory.032",
+          "Chameleon_Victory.033",
+          "Chameleon_Victory.034",
+          "Chameleon_Victory.035",
+          "Chameleon_Victory.036",
+          "Chameleon_Victory.037",
+          "Chameleon_Victory.038",
+          "Chameleon_Victory.039",
+          "Chameleon_Victory.040",
+          "Chameleon_Victory.041",
+          "Chameleon_Victory.042",
+          "Chameleon_Victory.043",
+          "Chameleon_Victory.044",
+          "Chameleon_Victory.045",
+          "Chameleon_Victory.046",
+          "Chameleon_Victory.047",
+          "Chameleon_Victory.048",
+          "Chameleon_Victory.049",
+          "Chameleon_Victory.050",
+          "Chameleon_Victory.051",
+          "Chameleon_Victory.052",
+          "Chameleon_Victory.053",
+          "Chameleon_Victory.054",
+          "Chameleon_Victory.055",
+          "Chameleon_Victory.056",
+          "Chameleon_Victory.057",
+          "Chameleon_Victory.058",
+          "Chameleon_Victory.059",
+          "Chameleon_Victory.060",
+          "Chameleon_Victory.061",
+          "Chameleon_Victory.062",
+          "Chameleon_Victory.063",
+          "Chameleon_Victory.064",
+          "Chameleon_Victory.065"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "Chameleon_Dance_Flip",
+        "frames": [
+          "Chameleon_Victory_Flip.000"
+        ]
+      },
+      {
+        "state": "Sit",
+        "clip": "Chameleon_Sit",
+        "frames": [
+          "Chameleon_Couch.000",
+          "Chameleon_Couch.001",
+          "Chameleon_Couch.002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "ChameleonCursor.000",
+      "Bad Cursor": "ChameleonCursor.001",
+      "Notebook Cursor": "ChameleonCursor.002",
+      "Portrait": "ChameleonPortrait.000"
+    },
+    "unused_frames": [
+      "Chameleon_DeathShock.000"
+    ],
+    "frame_states": {
+      "Chameleon_TransLookUp.000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Chameleon_TransLookUp.001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Chameleon_TransLookUp.002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Chameleon_TransCrouch.000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Chameleon_TransCrouch.001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Chameleon_TransCrouch.002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Chameleon_JumpTopFlip.000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Chameleon_LandingSoft.000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Chameleon_LandingSoft.001": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Chameleon_LandingSoft.002": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Chameleon_TopToWallSlide.000": [
+        "TransToSlide",
+        "SlideToGroundTwist"
+      ],
+      "Chameleon_ToWallSlide_Opposite_MIrror.001": [
+        "SlideToJump",
+        "SlideToGroundMirror"
+      ],
+      "Chameleon_ToWallSlide_Opposite_MIrror.000": [
+        "SlideToJump",
+        "SlideToGroundMirror"
+      ],
+      "Chameleon_DeathShock.001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Chameleon_DeathShock.002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Chameleon_DeathShock.003": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Chameleondie.004": [
+        "Dying",
+        "DeadPause"
+      ]
+    },
+    "outfit_metadata": {
+      "cape_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "goggles_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "hawaiian_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "axolotl_": {
+        "BehindLayer": false,
+        "LayerNumber": 0
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 3
+      }
+    }
+  },
+  {
+    "label": "Squirrel",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "Squirrel_Idle",
+        "frames": [
+          "Squirrel_Idle.000",
+          "Squirrel_Idle.001",
+          "Squirrel_Idle.002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "Squirrel_Flip",
+        "frames": [
+          "Squirrel_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "Squirrel_LookUp_GoingUp",
+        "frames": [
+          "Squirrel_TransLookUp.000",
+          "Squirrel_TransLookUp.001",
+          "Squirrel_TransLookUp.002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "Squirrel_LookUp",
+        "frames": [
+          "Squirrel_LookUp.000",
+          "Squirrel_LookUp.001",
+          "Squirrel_LookUp.002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "Squirrel_Lookup_Flip",
+        "frames": [
+          "Squirrel_LookUpFlip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "Squirrel_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "Squirrel_Crouch_GoingDown",
+        "frames": [
+          "Squirrel_TransCrouch.000",
+          "Squirrel_TransCrouch.001",
+          "Squirrel_TransCrouch.002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "Squirrel_Crouch",
+        "frames": [
+          "Squirrel_Crouch.000",
+          "Squirrel_Crouch.001",
+          "Squirrel_Crouch.002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "Squirrel_CrouchFlip",
+        "frames": [
+          "Squirrel_Crouch_Flip.000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "Squirrel_Crouch_GoingUp",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "Squirrel_Walk",
+        "frames": [
+          "Squirrel_Walk.000",
+          "Squirrel_Walk.001",
+          "Squirrel_Walk.002",
+          "Squirrel_Walk.003",
+          "Squirrel_Walk.004",
+          "Squirrel_Walk.005",
+          "Squirrel_Walk.006",
+          "Squirrel_Walk.007",
+          "Squirrel_Walk.008"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "Squirrel_Idle",
+        "frames": []
+      },
+      {
+        "state": "Run",
+        "clip": "Squirrel_Run",
+        "frames": [
+          "Squirrel_Run.000",
+          "Squirrel_Run.001",
+          "Squirrel_Run.002",
+          "Squirrel_Run.003",
+          "Squirrel_Run.004",
+          "Squirrel_Run.005"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "Squirrel_Run_ToJump",
+        "frames": [
+          "Squirrel_RunToJump.000",
+          "Squirrel_RunToJump.001"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "Squirrel_Jump",
+        "frames": [
+          "Squirrel_JumpGoingUp.000",
+          "Squirrel_JumpGoingUp.001",
+          "Squirrel_JumpGoingUp.002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "Squirrel_Jump_UpToTop",
+        "frames": [
+          "Squirrel_UpToTop.000",
+          "Squirrel_UpToTop.001",
+          "Squirrel_UpToTop.002"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "Squirrel_Jump_Top",
+        "frames": [
+          "Squirrel_JumpTop.000",
+          "Squirrel_JumpTop.001",
+          "Squirrel_JumpTop.002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "Squirrel_Jump_Flip",
+        "frames": [
+          "Squirrel_JumpTopFlip.000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "Squirrel_Jump_TopToDown",
+        "frames": [
+          "Squirrel_TopToDown.000",
+          "Squirrel_TopToDown.001",
+          "Squirrel_TopToDown.002"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "Squirrel_Jump_GoingDown",
+        "frames": [
+          "Squirrel_JumpGoingDown.000",
+          "Squirrel_JumpGoingDown.001",
+          "Squirrel_JumpGoingDown.002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "Squirrel_Jump_Land",
+        "frames": [
+          "Squirrel_LandingSoft.000",
+          "Squirrel_LandingSoft.001"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "Squirrel_Jump_Land",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "Squirrel_Jump_TopToSlide",
+        "frames": [
+          "Squirrel_TopToWallSlide.000",
+          "Squirrel_TopToWallSlide.001"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "Squirrel_Slide",
+        "frames": [
+          "Squirrel_WallSlide.000",
+          "Squirrel_WallSlide.001",
+          "Squirrel_WallSlide.002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "Squirrel_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "Squirrel_Slide_WallSlideToJumpUpTwist",
+        "frames": [
+          "Squirrel_WallSlideToJumpUpTwist.000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "Squirrel_Jump_TopToSlide_Opposite",
+        "frames": [
+          "Squirrel_ToWallSlide_OppositeStart.000",
+          "Squirrel_ToWallSlide_OppositeStart.001"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "Squirrel_Slide_ToJump",
+        "frames": [
+          "Squirrel_ToWallSlide_Opposite_MIrror.001",
+          "Squirrel_ToWallSlide_Opposite_MIrror.000"
+        ]
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "Squirrel_Slide_ToGround_Opposite",
+        "frames": [
+          "Squirrel_WallSlideToGround_Mirror.000"
+        ]
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "Squirrel_Slide_ToGround",
+        "frames": [
+          "Squirrel_WallSlideToGround.000"
+        ]
+      },
+      {
+        "state": "DeadShock",
+        "clip": "Squirrel_Dead_Shock",
+        "frames": [
+          "Squirrel_DeathShock.000",
+          "Squirrel_DeathShock.001",
+          "Squirrel_DeathShock.002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "Squirrel_Dead_Shock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "Squirrel_Dead_Rise",
+        "frames": [
+          "Squirrel_Dead_Rising.000",
+          "Squirrel_Dead_Rising.001",
+          "Squirrel_Dead_Rising.002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "Squirrel_Dead_MidToRise",
+        "frames": [
+          "Squirrel_Dead_RisingToMid.000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "Squirrel_Dead_Mid",
+        "frames": [
+          "Squirrel_Dead_MidAir.000",
+          "Squirrel_Dead_MidAir.001",
+          "Squirrel_Dead_MidAir.002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "Squirrel_Dead_MidToFall",
+        "frames": [
+          "Squirrel_Dead_MidAirToFalling.000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "Squirrel_Dead_Fall",
+        "frames": [
+          "Squirrel_DeadFalling.000",
+          "Squirrel_DeadFalling.001",
+          "Squirrel_DeadFalling.002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "Squirrel_Dying",
+        "frames": [
+          "Squirrel_die.000",
+          "Squirrel_die.001",
+          "Squirrel_die.002",
+          "Squirrel_die.003"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "Squirrel_Dead",
+        "frames": []
+      },
+      {
+        "state": "Dance",
+        "clip": "Squirrel_Dance",
+        "frames": [
+          "Squirrel_Victory.000",
+          "Squirrel_Victory.001",
+          "Squirrel_Victory.002",
+          "Squirrel_Victory.003",
+          "Squirrel_Victory.004",
+          "Squirrel_Victory.005",
+          "Squirrel_Victory.006",
+          "Squirrel_Victory.007",
+          "Squirrel_Victory.008",
+          "Squirrel_Victory.009"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "Squirrel_Dance_Flip",
+        "frames": [
+          "Squirrel_Victory_Flip.000"
+        ]
+      },
+      {
+        "state": "Sit",
+        "clip": "Squirrel_Sit",
+        "frames": [
+          "Squirrel_Couch.000",
+          "Squirrel_Couch.001",
+          "Squirrel_Couch.002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "SquirrelCursor.000",
+      "Bad Cursor": "SquirrelCursor.001",
+      "Notebook Cursor": "SquirrelCursor.002",
+      "Portrait": "SquirrelPortrait.000"
+    },
+    "unused_frames": [],
+    "frame_states": {
+      "Squirrel_Idle.000": [
+        "Idle",
+        "toIdle"
+      ],
+      "Squirrel_Idle.001": [
+        "Idle",
+        "toIdle"
+      ],
+      "Squirrel_Idle.002": [
+        "Idle",
+        "toIdle"
+      ],
+      "Squirrel_TransLookUp.000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Squirrel_TransLookUp.001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Squirrel_TransLookUp.002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Squirrel_TransCrouch.000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Squirrel_TransCrouch.001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Squirrel_TransCrouch.002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Squirrel_JumpTopFlip.000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Squirrel_LandingSoft.000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Squirrel_LandingSoft.001": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Squirrel_DeathShock.000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Squirrel_DeathShock.001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Squirrel_DeathShock.002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Squirrel_die.003": [
+        "Dying",
+        "DeadPause"
+      ]
+    },
+    "outfit_metadata": {
+      "headphones": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "boots_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "wingsuit_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "skunk_": {
+        "BehindLayer": false,
+        "LayerNumber": 0
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 3
+      }
+    }
+  },
+  {
+    "label": "RobotBunny",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "RobotBunny_Idle",
+        "frames": [
+          "Bunny_Idle.000",
+          "Bunny_Idle.001",
+          "Bunny_Idle.002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "RobotBunny_Flip",
+        "frames": [
+          "Bunny_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "RobotBunny_LookUp_GoingUp",
+        "frames": [
+          "Bunny_TransLookUp.000",
+          "Bunny_TransLookUp.001",
+          "Bunny_TransLookUp.002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "RobotBunny_LookUp",
+        "frames": [
+          "Bunny_LookUp.000",
+          "Bunny_LookUp.001",
+          "Bunny_LookUp.002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "RobotBunny_Lookup_Flip",
+        "frames": [
+          "Bunny_LookUpFlip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "RobotBunny_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "RobotBunny_Crouch_GoingDown",
+        "frames": [
+          "Bunny_Crouch_Trans.000",
+          "Bunny_Crouch_Trans.001",
+          "Bunny_Crouch_Trans.002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "RobotBunny_Crouch",
+        "frames": [
+          "Bunny_Crouch.000",
+          "Bunny_Crouch.001",
+          "Bunny_Crouch.002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "RobotBunny_CrouchFlip",
+        "frames": [
+          "Bunny_Crouch_Flip.000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "RobotBunny_Crouch_GoingUp",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "RobotBunny_Walk",
+        "frames": [
+          "Bunny_Walk.000",
+          "Bunny_Walk.001",
+          "Bunny_Walk.002"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "RobotBunny_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "Run",
+        "clip": "RobotBunny_Run",
+        "frames": [
+          "Bunny_Run.000",
+          "Bunny_Run.001",
+          "Bunny_Run.002"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "RobotBunny_Run_ToJump",
+        "frames": [
+          "Bunny_RunToJump.000",
+          "Bunny_RunToJump.001"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "RobotBunny_Jump",
+        "frames": [
+          "Bunny_JumpGoingUp.000",
+          "Bunny_JumpGoingUp.001",
+          "Bunny_JumpGoingUp.002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "RobotBunny_Jump_UpToTop",
+        "frames": [
+          "Bunny_UpToTop.000",
+          "Bunny_UpToTop.001",
+          "Bunny_UpToTop.002"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "RobotBunny_Jump_Top",
+        "frames": [
+          "Bunny_JumpTop.000",
+          "Bunny_JumpTop.001",
+          "Bunny_JumpTop.002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "RobotBunny_Jump_Flip",
+        "frames": [
+          "Bunny_JumpTopFlip.000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "RobotBunny_Jump_TopToDown",
+        "frames": [
+          "Bunny_TopToDown.000",
+          "Bunny_TopToDown.001",
+          "Bunny_TopToDown.002"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "RobotBunny_Jump_GoingDown",
+        "frames": [
+          "Bunny_JumpGoingDown.000",
+          "Bunny_JumpGoingDown.001",
+          "Bunny_JumpGoingDown.002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "RobotBunny_Jump_Land",
+        "frames": [
+          "Bunny_LandingSoft.000",
+          "Bunny_LandingSoft.001",
+          "Bunny_LandingSoft.002"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "RobotBunny_Jump_Land",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "RobotBunny_Jump_TopToSlide",
+        "frames": [
+          "Bunny_TopToWallSlide.000",
+          "Bunny_TopToWallSlide.001",
+          "Bunny_TopToWallSlide.002"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "RobotBunny_Slide",
+        "frames": [
+          "Bunny_WallSlide.000"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "RobotBunny_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "RobotBunny_Slide_WallSlideToJumpUpTwist",
+        "frames": [
+          "Bunny_WallSlideToJumpUpTwist.000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "RobotBunny_Jump_TopToSlide_Opposite",
+        "frames": [
+          "Bunny_ToWallSlide_OppositeStart.000",
+          "Bunny_ToWallSlide_OppositeStart.001",
+          "Bunny_ToWallSlide_OppositeStart.002"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "RobotBunny_Slide_ToJump",
+        "frames": [
+          "Bunny_ToWallSlide_Opposite_MIrror.002",
+          "Bunny_ToWallSlide_Opposite_MIrror.001",
+          "Bunny_ToWallSlide_Opposite_MIrror.000"
+        ]
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "RobotBunny_Slide_ToGround_Opposite",
+        "frames": [
+          "Bunny_WallSlideToGroupHelper_Opposite.000",
+          "Bunny_WallSlideToGroupHelper_Opposite.001",
+          "Bunny_WallSlideToGroupHelper_Opposite.002"
+        ]
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "RobotBunny_Slide_ToGround",
+        "frames": [
+          "Bunny_WallSlideToGroupHelper.000",
+          "Bunny_WallSlideToGroupHelper.001",
+          "Bunny_WallSlideToGroupHelper.002"
+        ]
+      },
+      {
+        "state": "DeadShock",
+        "clip": "RobotBunny_Dead_Shock",
+        "frames": [
+          "Bunny_DeathShock.000",
+          "Bunny_DeathShock.001",
+          "Bunny_DeathShock.002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "RobotBunny_Dead_Shock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "RobotBunny_Dead_Rise",
+        "frames": [
+          "Bunny_Dead_Rising.000",
+          "Bunny_Dead_Rising.001"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "RobotBunny_Dead_MidToRise",
+        "frames": [
+          "Bunny_Dead_RisingToMid.000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "RobotBunny_Dead_Mid",
+        "frames": [
+          "Bunny_Dead_MidAir.000",
+          "Bunny_Dead_MidAir.001"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "RobotBunny_Dead_MidToFall",
+        "frames": [
+          "Bunny_Dead_MidAirToFalling.000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "RobotBunny_Dead_Fall",
+        "frames": [
+          "Bunny_DeadFalling.000",
+          "Bunny_DeadFalling.001"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "RobotBunny_Dying",
+        "frames": [
+          "Bunnydie.000",
+          "Bunnydie.001",
+          "Bunnydie.002",
+          "Bunnydie.003",
+          "Bunnydie.004"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "RobotBunny_Dead",
+        "frames": []
+      },
+      {
+        "state": "Dance",
+        "clip": "RobotBunny_Dance",
+        "frames": [
+          "Bunny_Victory.000",
+          "Bunny_Victory.001",
+          "Bunny_Victory.002",
+          "Bunny_Victory.003",
+          "Bunny_Victory.004",
+          "Bunny_Victory.005",
+          "Bunny_Victory.006",
+          "Bunny_Victory.007",
+          "Bunny_Victory.008"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "RobotBunny_Dance_Flip",
+        "frames": [
+          "Bunny_Victory_Flip.000"
+        ]
+      },
+      {
+        "state": "Sit",
+        "clip": "RobotBunny_Sit",
+        "frames": [
+          "Bunny_Couch.000",
+          "Bunny_Couch.001",
+          "Bunny_Couch.002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "BunnyCursor.000",
+      "Bad Cursor": "BunnyCursor.001",
+      "Notebook Cursor": "BunnyCursor.002",
+      "Portrait": "BunnyPortrait.000"
+    },
+    "unused_frames": [
+      "Bunny_WallSlide.001",
+      "Bunny_WallSlide.002"
+    ],
+    "frame_states": {
+      "Bunny_Idle.002": [
+        "Idle",
+        "toIdle"
+      ],
+      "Bunny_TransLookUp.000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Bunny_TransLookUp.001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Bunny_TransLookUp.002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Bunny_Crouch_Trans.000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Bunny_Crouch_Trans.001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Bunny_Crouch_Trans.002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Bunny_JumpTopFlip.000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Bunny_LandingSoft.000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Bunny_LandingSoft.001": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Bunny_LandingSoft.002": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Bunny_DeathShock.000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Bunny_DeathShock.001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Bunny_DeathShock.002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Bunnydie.004": [
+        "Dying",
+        "DeadPause"
+      ]
+    },
+    "outfit_metadata": {
+      "prop_": {
+        "BehindLayer": false,
+        "LayerNumber": 3
+      },
+      "tutu_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "umbrella_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "real_": {
+        "BehindLayer": false,
+        "LayerNumber": 0
+      },
+      "real02_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 3
+      }
+    }
+  },
+  {
+    "label": "Elephant",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "Elephant_Idle",
+        "frames": [
+          "Elephant_Idle.000",
+          "Elephant_Idle.001",
+          "Elephant_Idle.002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "Elephant_Flip",
+        "frames": [
+          "Elephant_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "Elephant_LookUp_GoingUp",
+        "frames": [
+          "Elephant_TransLookUp.000",
+          "Elephant_TransLookUp.001",
+          "Elephant_TransLookUp.002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "Elephant_LookUp",
+        "frames": [
+          "Elephant_LookUp.000",
+          "Elephant_LookUp.001",
+          "Elephant_LookUp.002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "Elephant_Lookup_Flip",
+        "frames": [
+          "Elephant_LookUp_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "Elephant_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "Elephant_Crouch_GoingDown",
+        "frames": [
+          "Elephant_CrouchTrans.000",
+          "Elephant_CrouchTrans.001",
+          "Elephant_CrouchTrans.002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "Elephant_Crouch",
+        "frames": [
+          "Elephant_Crouch.000",
+          "Elephant_Crouch.001",
+          "Elephant_Crouch.002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "Elephant_CrouchFlip",
+        "frames": [
+          "Elephant_Crouch_flip.000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "Elephant_Crouch_GoingUp",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "Elephant_Walk",
+        "frames": [
+          "Elephant_Walk.000",
+          "Elephant_Walk.001",
+          "Elephant_Walk.002",
+          "Elephant_Walk.003",
+          "Elephant_Walk.004",
+          "Elephant_Walk.005",
+          "Elephant_Walk.006",
+          "Elephant_Walk.007",
+          "Elephant_Walk.008",
+          "Elephant_Walk.009",
+          "Elephant_Walk.010"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "Elephant_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "Run",
+        "clip": "Elephant_Run",
+        "frames": [
+          "Elephant_Run.000",
+          "Elephant_Run.001",
+          "Elephant_Run.002",
+          "Elephant_Run.003",
+          "Elephant_Run.004",
+          "Elephant_Run.005",
+          "Elephant_Run.006"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "Elephant_Run_ToJump",
+        "frames": [
+          "Elephant_RunToJump.000",
+          "Elephant_RunToJump.001"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "Elephant_Jump",
+        "frames": [
+          "Elephant_GoingUp.000",
+          "Elephant_GoingUp.001",
+          "Elephant_GoingUp.002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "Elephant_Jump_UpToTop",
+        "frames": [
+          "Elephant_UpToTop.000",
+          "Elephant_UpToTop.001",
+          "Elephant_UpToTop.002"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "Elephant_Jump_Top",
+        "frames": [
+          "Elephant_JumpTop.000",
+          "Elephant_JumpTop.001",
+          "Elephant_JumpTop.002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "Elephant_Jump_Flip",
+        "frames": [
+          "Elephant_JumpTop_Flip.000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "Elephant_Jump_TopToDown",
+        "frames": [
+          "Elephant_TopToDown.000",
+          "Elephant_TopToDown.001",
+          "Elephant_TopToDown.002"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "Elephant_Jump_GoingDown",
+        "frames": [
+          "Elephant_JumpFall.000"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "Elephant_Jump_Land",
+        "frames": [
+          "Elephant_LandingSoft.000",
+          "Elephant_LandingSoft.001"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "Elephant_Jump_Land",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "Elephant_Jump_TopToSlide",
+        "frames": [
+          "Elephant_TopToWallSlide.000",
+          "Elephant_TopToWallSlide.001"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "Elephant_Slide",
+        "frames": [
+          "Elephant_Wallslide.000",
+          "Elephant_Wallslide.002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "Elephant_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "Elephant_Slide_WallSlideToJumpUpTwist",
+        "frames": [
+          "Elephant_WalltoJumpUpTwist.000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "Elephant_Jump_TopToSlide_Opposite",
+        "frames": [
+          "Elephant_TopToWallSlide_Twist.000",
+          "Elephant_TopToWallSlide_Twist.001"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "Elephant_Slide_ToJump",
+        "frames": []
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "Elephant_Slide_ToGround_Opposite",
+        "frames": [
+          "Elephant_TopToWallSlide_Twist_Mirror.001",
+          "Elephant_TopToWallSlide_Twist_Mirror.000"
+        ]
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "Elephant_Slide_ToGround",
+        "frames": []
+      },
+      {
+        "state": "DeadShock",
+        "clip": "Elephant_Dead_Shock",
+        "frames": [
+          "Elephant_Death_Shock.000",
+          "Elephant_Death_Shock.001",
+          "Elephant_Death_Shock.002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "Elephant_Dead_Shock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "Elephant_Dead_Rise",
+        "frames": [
+          "Elephant_Dead_Rise.000",
+          "Elephant_Dead_Rise.001",
+          "Elephant_Dead_Rise.002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "Elephant_Dead_MidToRise",
+        "frames": [
+          "Elephant_Dead_MidToRise.000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "Elephant_Dead_Mid",
+        "frames": [
+          "Elephant_Dead_Mid.000",
+          "Elephant_Dead_Mid.001",
+          "Elephant_Dead_Mid.002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "Elephant_Dead_MidToFall",
+        "frames": [
+          "Elephant_Dead_MidToFall.000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "Elephant_Dead_Fall",
+        "frames": [
+          "Elephant_Dead_Fall.000",
+          "Elephant_Dead_Fall.001",
+          "Elephant_Dead_Fall.002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "Elephant_Dying",
+        "frames": [
+          "Elephant_Die.000",
+          "Elephant_Die.001",
+          "Elephant_Die.002"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "Elephant_Dead",
+        "frames": []
+      },
+      {
+        "state": "Dance",
+        "clip": "Elephant_Dance",
+        "frames": [
+          "Elephant_Victory.009",
+          "Elephant_Victory.010",
+          "Elephant_Victory.011",
+          "Elephant_Victory.012",
+          "Elephant_Victory.013",
+          "Elephant_Victory.014",
+          "Elephant_Victory.000",
+          "Elephant_Victory.001",
+          "Elephant_Victory.002",
+          "Elephant_Victory.003",
+          "Elephant_Victory.004",
+          "Elephant_Victory.005",
+          "Elephant_Victory.006",
+          "Elephant_Victory.007",
+          "Elephant_Victory.008"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "Elephant_Dance_Flip",
+        "frames": [
+          "Elephant_Victory_Flip.000"
+        ]
+      },
+      {
+        "state": "Sit",
+        "clip": "Elephant_Sit",
+        "frames": [
+          "Elephant_Couch.000",
+          "Elephant_Couch.001",
+          "Elephant_Couch.002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "ElephantCursor.000",
+      "Bad Cursor": "ElephantCursor.001",
+      "Notebook Cursor": "ElephantCursor.002",
+      "Portrait": "ElephantPortrait.000"
+    },
+    "unused_frames": [
+      "Elephant_JumpFall.001",
+      "Elephant_JumpFall.002",
+      "Elephant_Wallslide.001"
+    ],
+    "frame_states": {
+      "Elephant_Idle.000": [
+        "Idle",
+        "toIdle"
+      ],
+      "Elephant_TransLookUp.000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Elephant_TransLookUp.001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Elephant_TransLookUp.002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Elephant_CrouchTrans.000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Elephant_CrouchTrans.001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Elephant_CrouchTrans.002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Elephant_RunToJump.000": [
+        "StartJump",
+        "SlideToJump"
+      ],
+      "Elephant_JumpTop_Flip.000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Elephant_LandingSoft.000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Elephant_LandingSoft.001": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Elephant_TopToWallSlide.000": [
+        "TransToSlide",
+        "SlideToGroundTwist"
+      ],
+      "Elephant_TopToWallSlide.001": [
+        "TransToSlide",
+        "SlideToGroundTwist"
+      ],
+      "Elephant_Death_Shock.000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Elephant_Death_Shock.001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Elephant_Death_Shock.002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Elephant_Die.002": [
+        "Dying",
+        "DeadPause"
+      ]
+    },
+    "outfit_metadata": {
+      "janefonda_body_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "janefonda_head_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "oxpecker_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "mamooth_": {
+        "BehindLayer": false,
+        "LayerNumber": 0
+      },
+      "zombie": {
+        "BehindLayer": false,
+        "LayerNumber": 3
+      }
+    }
+  },
+  {
+    "label": "Monkey",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "Monkey_Idle",
+        "frames": [
+          "Monkey_Idle.000",
+          "Monkey_Idle.001",
+          "Monkey_Idle.002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "Monkey_Flip",
+        "frames": [
+          "Monkey_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "Monkey_LookUp_GoingUp",
+        "frames": [
+          "Monkey_LookUp_GoingUp.000",
+          "Monkey_LookUp_GoingUp.001",
+          "Monkey_LookUp_GoingUp.002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "Monkey_LookUp",
+        "frames": [
+          "Monkey_LookUp.000",
+          "Monkey_LookUp.001",
+          "Monkey_LookUp.002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "Monkey_LookUp_Flip",
+        "frames": [
+          "Monkey_LookUp_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "Monkey_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "Monkey_Crouch_Down",
+        "frames": [
+          "Monkey_Crouch_Down.000",
+          "Monkey_Crouch_Down.001",
+          "Monkey_Crouch_Down.002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "Monkey_Crouch",
+        "frames": [
+          "Monkey_Crouch.000",
+          "Monkey_Crouch.001",
+          "Monkey_Crouch.002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "Monkey_Crouch_Flip",
+        "frames": [
+          "Monkey_Crouch_Flip.000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "Monkey_Crouch_Up",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "Monkey_Walk",
+        "frames": [
+          "Monkey_Walk.000",
+          "Monkey_Walk.001",
+          "Monkey_Walk.002",
+          "Monkey_Walk.003",
+          "Monkey_Walk.004",
+          "Monkey_Walk.005",
+          "Monkey_Walk.006"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "Monkey_ToIdle",
+        "frames": [
+          "Monkey_ToIdle.000",
+          "Monkey_ToIdle.001"
+        ]
+      },
+      {
+        "state": "Run",
+        "clip": "Monkey_Run",
+        "frames": [
+          "Monkey_Run.000",
+          "Monkey_Run.001",
+          "Monkey_Run.002",
+          "Monkey_Run.003",
+          "Monkey_Run.004",
+          "Monkey_Run.005",
+          "Monkey_Run.006"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "Monkey_Run_TransRuntoJump",
+        "frames": [
+          "Monkey_Run_TransRuntoJump.000",
+          "Monkey_Run_TransRuntoJump.001"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "Monkey_Jump_GoingUp",
+        "frames": [
+          "Monkey_Jump_GoingUp.000",
+          "Monkey_Jump_GoingUp.001",
+          "Monkey_Jump_GoingUp.002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "Monkey_Jump_TransUpToTop",
+        "frames": [
+          "Monkey_Jump_TransUpToTop.000",
+          "Monkey_Jump_TransUpToTop.001"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "Monkey_Jump_Top",
+        "frames": [
+          "Monkey_Jump_Top.000",
+          "Monkey_Jump_Top.001",
+          "Monkey_Jump_Top.002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "Monkey_Jump_Flip",
+        "frames": [
+          "Monkey_Jump_Flip.000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "Monkey_Jump_TransTopToDown",
+        "frames": [
+          "Monkey_Jump_TransTopToDown.000",
+          "Monkey_Jump_TransTopToDown.001"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "Monkey_Jump_GoingDown",
+        "frames": [
+          "Monkey_Jump_GoingDown.000",
+          "Monkey_Jump_GoingDown.001",
+          "Monkey_Jump_GoingDown.002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "Monkey_Jump_Land",
+        "frames": [
+          "Monkey_Jump_Land.000",
+          "Monkey_Jump_Land.001",
+          "Monkey_Jump_Land.002"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "Monkey_Jump_Land_ToIdle",
+        "frames": [
+          "Monkey_Jump_Land_ToIdle.000",
+          "Monkey_Jump_Land_ToIdle.001",
+          "Monkey_Jump_Land_ToIdle.002"
+        ]
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "Monkey_Jump_TransTopToSlide",
+        "frames": [
+          "Monkey_Jump_TransTopToSlide.000",
+          "Monkey_Jump_TransTopToSlide.001"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "Monkey_Slide",
+        "frames": [
+          "Monkey_Slide.000",
+          "Monkey_Slide.001",
+          "Monkey_Slide.002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "Monkey_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "Monkey_Slide_ToJumpUpTwist",
+        "frames": [
+          "Monkey_Slide_ToJumpUpTwist.000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "Monkey_Jump_TransToSlideOtherDirection",
+        "frames": [
+          "Monkey_Jump_TransToSlideOtherDirection.000",
+          "Monkey_Jump_TransToSlideOtherDirection.001"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "Monkey_Slide_ToJump",
+        "frames": [
+          "Monkey_Slide_ToJump.000",
+          "Monkey_Slide_ToJump.001"
+        ]
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "Monkey_Slide_ToGroundMirror",
+        "frames": [
+          "Monkey_Slide_ToGroundMirror.000",
+          "Monkey_Slide_ToGroundMirror.001"
+        ]
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "Monkey_Slide_ToGround",
+        "frames": [
+          "Monkey_Slide_ToGround.000",
+          "Monkey_Slide_ToGround.001"
+        ]
+      },
+      {
+        "state": "DeadShock",
+        "clip": "Monkey_Dead_Shock",
+        "frames": [
+          "Monkey_Dead_Shock.000",
+          "Monkey_Dead_Shock.001",
+          "Monkey_Dead_Shock.002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "Monkey_Dead_Shock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "Monkey_Dead_Rise",
+        "frames": [
+          "Monkey_Dead_Rise.000",
+          "Monkey_Dead_Rise.001",
+          "Monkey_Dead_Rise.002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "Monkey_Dead_MidToRise",
+        "frames": [
+          "Monkey_Dead_MidToRise.000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "Monkey_Dead_Mid",
+        "frames": [
+          "Monkey_Dead_Mid.000",
+          "Monkey_Dead_Mid.001",
+          "Monkey_Dead_Mid.002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "Monkey_Dead_FallToMid",
+        "frames": [
+          "Monkey_Dead_FallToMid.000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "Monkey_Dead_Fall",
+        "frames": [
+          "Monkey_Dead_Fall.000",
+          "Monkey_Dead_Fall.001",
+          "Monkey_Dead_Fall.002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "Monkey_Dying",
+        "frames": [
+          "Monkey_Dying.000",
+          "Monkey_Dying.001",
+          "Monkey_Dying.002",
+          "Monkey_Dying.003",
+          "Monkey_Dying.004",
+          "Monkey_Dying.005",
+          "Monkey_Dying.006",
+          "Monkey_Dying.007"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "Monkey_Dead",
+        "frames": [
+          "Monkey_Dead.000"
+        ]
+      },
+      {
+        "state": "Dance",
+        "clip": "Monkey_Dance",
+        "frames": [
+          "Monkey_Dance.000",
+          "Monkey_Dance.001",
+          "Monkey_Dance.002",
+          "Monkey_Dance.003",
+          "Monkey_Dance.004",
+          "Monkey_Dance.005",
+          "Monkey_Dance.006",
+          "Monkey_Dance.007",
+          "Monkey_Dance.008",
+          "Monkey_Dance.009"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "Monkey_Dance_Flip",
+        "frames": [
+          "Monkey_Dance_Flip.000"
+        ]
+      },
+      {
+        "state": "Sit",
+        "clip": "Monkey_Sit",
+        "frames": [
+          "Monkey_Sit.000",
+          "Monkey_Sit.001",
+          "Monkey_Sit.002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "MonkeyCursor.000",
+      "Bad Cursor": "MonkeyCursor.001",
+      "Notebook Cursor": "MonkeyCursor.002",
+      "Portrait": "MonkeyPortrait.000"
+    },
+    "unused_frames": [],
+    "frame_states": {
+      "Monkey_LookUp_GoingUp.000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Monkey_LookUp_GoingUp.001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Monkey_LookUp_GoingUp.002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Monkey_Crouch_Down.000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Monkey_Crouch_Down.001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Monkey_Crouch_Down.002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Monkey_Jump_Flip.000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Monkey_Dead_Shock.000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Monkey_Dead_Shock.001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Monkey_Dead_Shock.002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ]
+    },
+    "outfit_metadata": {
+      "letterman_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "chefhat_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "backpack_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "robot_": {
+        "BehindLayer": false,
+        "LayerNumber": 0
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 3
+      }
+    }
+  },
+  {
+    "label": "Snake",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "Snake_Idle",
+        "frames": [
+          "Snake_Idle.000",
+          "Snake_Idle.001",
+          "Snake_Idle.002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "Snake_Flip",
+        "frames": [
+          "Snake_Flip.000",
+          "Snake_Flip.001"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "Snake_LookUp_GoingUp",
+        "frames": [
+          "Snake_TransLookUp.000",
+          "Snake_TransLookUp.001",
+          "Snake_TransLookUp.002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "Snake_LookUp",
+        "frames": [
+          "Snake_LookUp.000",
+          "Snake_LookUp.001",
+          "Snake_LookUp.002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "Snake_LookUpFlip",
+        "frames": [
+          "Snake_LookUpFlip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "Snake_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "Snake_Crouch_Down",
+        "frames": [
+          "Snake_TransCrouch.000",
+          "Snake_TransCrouch.001",
+          "Snake_TransCrouch.002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "Snake_Crouch",
+        "frames": [
+          "Snake_Crouch.000",
+          "Snake_Crouch.001",
+          "Snake_Crouch.002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "Snake_Crouch_Flip",
+        "frames": [
+          "Snake_Crouch_Flip.000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "Snake_Crouch_Up",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "Snake_Walk",
+        "frames": [
+          "Snake_Walk.000",
+          "Snake_Walk.001",
+          "Snake_Walk.002",
+          "Snake_Walk.003",
+          "Snake_Walk.004",
+          "Snake_Walk.005",
+          "Snake_Walk.006",
+          "Snake_Walk.007",
+          "Snake_Walk.008"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "Snake_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "Run",
+        "clip": "Snake_Run",
+        "frames": [
+          "Snake_Run.000",
+          "Snake_Run.001",
+          "Snake_Run.002",
+          "Snake_Run.003",
+          "Snake_Run.004",
+          "Snake_Run.005",
+          "Snake_Run.006",
+          "Snake_Run.007",
+          "Snake_Run.008",
+          "Snake_Run.009"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "Snake_Run_TransRuntoJump",
+        "frames": [
+          "Snake_RunToJump.001"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "Snake_JumpGoingUp",
+        "frames": [
+          "Snake_JumpGoingUp.000",
+          "Snake_JumpGoingUp.001",
+          "Snake_JumpGoingUp.002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "Snake_Jump_TransUpToTop",
+        "frames": [
+          "Snake_UpToTop.000",
+          "Snake_UpToTop.001"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "Snake_JumpTop",
+        "frames": [
+          "Snake_JumpTop.000",
+          "Snake_JumpTop.001",
+          "Snake_JumpTop.002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "Snake_Jump_Flip",
+        "frames": [
+          "Snake_Jump_Flip.000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "Snake_Jump_TransTopToDown",
+        "frames": [
+          "Snake_TopToDown.000",
+          "Snake_TopToDown.001"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "Snake_JumpGoingDown",
+        "frames": [
+          "Snake_JumpGoingDown.000",
+          "Snake_JumpGoingDown.001",
+          "Snake_JumpGoingDown.002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "Snake_LandingSoft",
+        "frames": [
+          "Snake_LandingSoft.000",
+          "Snake_LandingSoft.001",
+          "Snake_LandingSoft.002"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "Snake_Land_toIdle",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "Snake_Jump_TransTopToSlide",
+        "frames": [
+          "Snake_Jump_TransTopToSlide.000",
+          "Snake_Jump_TransTopToSlide.001"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "Snake_Slide",
+        "frames": [
+          "Snake_Slide.000",
+          "Snake_Slide.001",
+          "Snake_Slide.002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "Snake_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "Snake_Slide_ToJumpUpTwist",
+        "frames": [
+          "Snake_Slide_ToJumpUpTwist.000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "Snake_Jump_TransToSlideOtherDirection",
+        "frames": [
+          "Snake_Jump_TransToSlideOtherDirection.000",
+          "Snake_Jump_TransToSlideOtherDirection.001"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "Snake_Slide_ToJump",
+        "frames": [
+          "Snake_Slide_ToJump.001",
+          "Snake_Slide_ToJump.000"
+        ]
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "Snake_Slide_ToGroundMirror",
+        "frames": [
+          "Snake_Slide_ToGroundMirror.000",
+          "Snake_Slide_ToGroundMirror.001"
+        ]
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "Snake_Slide_ToGround",
+        "frames": [
+          "Snake_Slide_ToGround.000",
+          "Snake_Slide_ToGround.001"
+        ]
+      },
+      {
+        "state": "DeadShock",
+        "clip": "Snake_DeathShock",
+        "frames": [
+          "Snake_DeathShock.000",
+          "Snake_DeathShock.001",
+          "Snake_DeathShock.002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "Snake_DeathShock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "Snake_Dead_Rise",
+        "frames": [
+          "Snake_Dead_Rise.000",
+          "Snake_Dead_Rise.001",
+          "Snake_Dead_Rise.002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "Snake_Dead_MidToRise",
+        "frames": [
+          "Snake_Dead_MidToRise.000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "Snake_Dead_Mid",
+        "frames": [
+          "Snake_Dead_Mid.000",
+          "Snake_Dead_Mid.001",
+          "Snake_Dead_Mid.002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "Snake_Dead_FallToMid",
+        "frames": [
+          "Snake_Dead_FallToMid.000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "Snake_Dead_Fall",
+        "frames": [
+          "Snake_Dead_Fall.000",
+          "Snake_Dead_Fall.001",
+          "Snake_Dead_Fall.002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "Snake_Dying",
+        "frames": [
+          "Snake_Dying.000",
+          "Snake_Dying.001",
+          "Snake_Dying.002"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "Snake_Dead",
+        "frames": [
+          "Snake_Dead.000"
+        ]
+      },
+      {
+        "state": "Dance",
+        "clip": "Snake_Victory",
+        "frames": [
+          "Snake_Victory.000",
+          "Snake_Victory.001",
+          "Snake_Victory.002",
+          "Snake_Victory.003",
+          "Snake_Victory.004",
+          "Snake_Victory.005",
+          "Snake_Victory.006",
+          "Snake_Victory.007",
+          "Snake_Victory.008",
+          "Snake_Victory.009",
+          "Snake_Victory.010",
+          "Snake_Victory.011",
+          "Snake_Victory.012",
+          "Snake_Victory.013",
+          "Snake_Victory.014",
+          "Snake_Victory.015",
+          "Snake_Victory.016",
+          "Snake_Victory.017",
+          "Snake_Victory.018",
+          "Snake_Victory.019",
+          "Snake_Victory.020",
+          "Snake_Victory.021"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "Snake_Victory_Flip",
+        "frames": []
+      },
+      {
+        "state": "Sit",
+        "clip": "Snake_Couch",
+        "frames": [
+          "Snake_Couch.000",
+          "Snake_Couch.001",
+          "Snake_Couch.002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "SnakeCursor.000",
+      "Bad Cursor": "SnakeCursor.001",
+      "Notebook Cursor": "SnakeCursor.002",
+      "Portrait": "SnakePortrait.000"
+    },
+    "unused_frames": [
+      "Snake_RunToJump.000",
+      "Snake_Victory_Flip.000"
+    ],
+    "frame_states": {
+      "Snake_Idle.001": [
+        "Idle",
+        "toIdle"
+      ],
+      "Snake_Idle.002": [
+        "Idle",
+        "toIdle"
+      ],
+      "Snake_TransLookUp.000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Snake_TransLookUp.001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Snake_TransLookUp.002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Snake_TransCrouch.000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Snake_TransCrouch.001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Snake_TransCrouch.002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Snake_Jump_Flip.000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Snake_LandingSoft.000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Snake_LandingSoft.001": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Snake_LandingSoft.002": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Snake_DeathShock.000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Snake_DeathShock.001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Snake_DeathShock.002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Snake_Victory.019": [
+        "Dance",
+        "Dance Flip"
+      ]
+    },
+    "outfit_metadata": {
+      "skate_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "cobra_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "scarf_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "hoverboard_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "cap_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      }
+    }
+  },
+  {
+    "label": "Hippo",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "Hippo_Idle",
+        "frames": [
+          "Hippo_Idle.000",
+          "Hippo_Idle.001",
+          "Hippo_Idle.002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "Hippo_Flip",
+        "frames": [
+          "Hippo_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "Hippo_LookUp_GoingUp",
+        "frames": [
+          "Hippo_TransLookUp.000",
+          "Hippo_TransLookUp.001",
+          "Hippo_TransLookUp.002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "Hippo_LookUp",
+        "frames": [
+          "Hippo_LookUp.000",
+          "Hippo_LookUp.001",
+          "Hippo_LookUp.002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "Hippo_LookUpFlip",
+        "frames": [
+          "Hippo_LookUpFlip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "Hippo_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "Hippo_Crouch_Down",
+        "frames": [
+          "Hippo_TransCrouch.000",
+          "Hippo_TransCrouch.001",
+          "Hippo_TransCrouch.002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "Hippo_Crouch",
+        "frames": [
+          "Hippo_Crouch.000",
+          "Hippo_Crouch.001",
+          "Hippo_Crouch.002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "Hippo_Crouch_Flip",
+        "frames": [
+          "Hippo_Crouch_Flip.000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "Hippo_Crouch_Up",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "Hippo_Walk",
+        "frames": [
+          "Hippo_Walk.000",
+          "Hippo_Walk.001",
+          "Hippo_Walk.002",
+          "Hippo_Walk.003",
+          "Hippo_Walk.004",
+          "Hippo_Walk.005",
+          "Hippo_Walk.006",
+          "Hippo_Walk.007"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "Hippo_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "Run",
+        "clip": "Hippo_Run",
+        "frames": [
+          "Hippo_Run.000",
+          "Hippo_Run.001",
+          "Hippo_Run.002",
+          "Hippo_Run.003",
+          "Hippo_Run.004",
+          "Hippo_Run.005",
+          "Hippo_Run.006",
+          "Hippo_Run.007"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "Hippo_RunToJump",
+        "frames": [
+          "Hippo_RunToJump.000",
+          "Hippo_RunToJump.001"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "Hippo_JumpGoingUp",
+        "frames": [
+          "Hippo_JumpGoingUp.000",
+          "Hippo_JumpGoingUp.001",
+          "Hippo_JumpGoingUp.002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "Hippo_UpToTop",
+        "frames": [
+          "Hippo_UpToTop.000",
+          "Hippo_UpToTop.001"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "Hippo_JumpTop",
+        "frames": [
+          "Hippo_JumpTop.000",
+          "Hippo_JumpTop.001",
+          "Hippo_JumpTop.002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "Hippo_Jump_Flip",
+        "frames": [
+          "Hippo_Jump_Flip.000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "Hippo_TopToDown",
+        "frames": [
+          "Hippo_TopToDown.000",
+          "Hippo_TopToDown.001"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "Hippo_JumpGoingDown",
+        "frames": [
+          "Hippo_JumpGoingDown.000",
+          "Hippo_JumpGoingDown.001",
+          "Hippo_JumpGoingDown.002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "Hippo_LandingSoft",
+        "frames": [
+          "Hippo_LandingSoft.000",
+          "Hippo_LandingSoft.001",
+          "Hippo_LandingSoft.002"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "Hippo_LandingSoft_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "Hippo_Jump_TransTopToSlide",
+        "frames": [
+          "Hippo_Jump_TransTopToSlide.000",
+          "Hippo_Jump_TransTopToSlide.001"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "Hippo_Slide",
+        "frames": [
+          "Hippo_Slide.000",
+          "Hippo_Slide.001",
+          "Hippo_Slide.002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "Hippo_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "Hippo_Slide_ToJumpUpTwist",
+        "frames": [
+          "Hippo_Slide_ToJumpUpTwist.000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "Hippo_Jump_TransToSlideOtherDirection",
+        "frames": [
+          "Hippo_Jump_TransToSlideOtherDirection.000",
+          "Hippo_Jump_TransToSlideOtherDirection.001"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "Hippo_Slide_ToJump",
+        "frames": [
+          "Hippo_Slide_ToJump.000",
+          "Hippo_Slide_ToJump.001"
+        ]
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "Hippo_Slide_ToGroundMirror",
+        "frames": [
+          "Hippo_Slide_ToGroundMirror.000",
+          "Hippo_Slide_ToGroundMirror.001"
+        ]
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "Hippo_Slide_ToGround",
+        "frames": [
+          "Hippo_Slide_ToGround.000",
+          "Hippo_Slide_ToGround.001"
+        ]
+      },
+      {
+        "state": "DeadShock",
+        "clip": "Hippo_DeathShock",
+        "frames": [
+          "Hippo_DeathShock.000",
+          "Hippo_DeathShock.001",
+          "Hippo_DeathShock.002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "Hippo_DeathShock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "Hippo_Dead_Rise",
+        "frames": [
+          "Hippo_Dead_Rise.000",
+          "Hippo_Dead_Rise.001",
+          "Hippo_Dead_Rise.002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "Hippo_Dead_MidToRise",
+        "frames": [
+          "Hippo_Dead_MidToRise.000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "Hippo_Dead_Mid",
+        "frames": [
+          "Hippo_Dead_Mid.000",
+          "Hippo_Dead_Mid.001",
+          "Hippo_Dead_Mid.002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "Hippo_Dead_FallToMid",
+        "frames": [
+          "Hippo_Dead_FallToMid.000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "Hippo_Dead_Fall",
+        "frames": [
+          "Hippo_Dead_Fall.000",
+          "Hippo_Dead_Fall.001",
+          "Hippo_Dead_Fall.002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "Hippo_Dying",
+        "frames": [
+          "Hippo_Dying.000",
+          "Hippo_Dying.001",
+          "Hippo_Dying.002"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "Hippo_Dead",
+        "frames": [
+          "Hippo_Dead.000"
+        ]
+      },
+      {
+        "state": "Dance",
+        "clip": "Hippo_Victory",
+        "frames": [
+          "Hippo_Victory.000",
+          "Hippo_Victory.001",
+          "Hippo_Victory.002",
+          "Hippo_Victory.003",
+          "Hippo_Victory.004",
+          "Hippo_Victory.005",
+          "Hippo_Victory.006",
+          "Hippo_Victory.007",
+          "Hippo_Victory.008",
+          "Hippo_Victory.009",
+          "Hippo_Victory.010",
+          "Hippo_Victory.011",
+          "Hippo_Victory.012",
+          "Hippo_Victory.013",
+          "Hippo_Victory.014",
+          "Hippo_Victory.015",
+          "Hippo_Victory.016",
+          "Hippo_Victory.017",
+          "Hippo_Victory.018",
+          "Hippo_Victory.019",
+          "Hippo_Victory.020",
+          "Hippo_Victory.021",
+          "Hippo_Victory.022",
+          "Hippo_Victory.023",
+          "Hippo_Victory.024",
+          "Hippo_Victory.025",
+          "Hippo_Victory.026",
+          "Hippo_Victory.027",
+          "Hippo_Victory.028",
+          "Hippo_Victory.029",
+          "Hippo_Victory.030",
+          "Hippo_Victory.031",
+          "Hippo_Victory.032",
+          "Hippo_Victory.033",
+          "Hippo_Victory.034",
+          "Hippo_Victory.035",
+          "Hippo_Victory.036",
+          "Hippo_Victory.037"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "Hippo_Victory_Flip",
+        "frames": []
+      },
+      {
+        "state": "Sit",
+        "clip": "Hippo_Couch",
+        "frames": [
+          "Hippo_Couch.000",
+          "Hippo_Couch.001",
+          "Hippo_Couch.002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "Hippo_Cursor.000",
+      "Bad Cursor": "Hippo_Cursor.001",
+      "Notebook Cursor": "Hippo_Cursor.002",
+      "Portrait": "Hippo_Portrait.000"
+    },
+    "unused_frames": [
+      "Hippo_Run.008"
+    ],
+    "frame_states": {
+      "Hippo_Idle.000": [
+        "Idle",
+        "toIdle"
+      ],
+      "Hippo_Idle.001": [
+        "Idle",
+        "toIdle"
+      ],
+      "Hippo_TransLookUp.000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Hippo_TransLookUp.001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Hippo_TransLookUp.002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Hippo_TransCrouch.000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Hippo_TransCrouch.001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Hippo_TransCrouch.002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Hippo_Jump_Flip.000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Hippo_LandingSoft.000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Hippo_LandingSoft.001": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Hippo_LandingSoft.002": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Hippo_DeathShock.000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Hippo_DeathShock.001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Hippo_DeathShock.002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Hippo_Victory.037": [
+        "Dance",
+        "Dance Flip"
+      ]
+    },
+    "frame_aliases": {
+      "triceratops": {
+        "Hippo_Jump_TransToSlideOtherDirection.000": "Hippo_TransToSlideOtherDirection.000",
+        "Hippo_Jump_TransToSlideOtherDirection.001": "Hippo_TransToSlideOtherDirection.001"
+      }
+    },
+    "outfit_metadata": {
+      "triceratops_": {
+        "BehindLayer": false,
+        "LayerNumber": -1
+      },
+      "boots_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "floater_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "balloon_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "zombietricera_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      }
+    }
+  },
+  {
+    "label": "Turtle",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "Turtle_Idle",
+        "frames": [
+          "Turtle_Idle.000",
+          "Turtle_Idle.001",
+          "Turtle_Idle.002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "Turtle_Flip",
+        "frames": [
+          "Turtle_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "Turtle_LookUp_GoingUp",
+        "frames": [
+          "Turtle_TransLookUp.000",
+          "Turtle_TransLookUp.001",
+          "Turtle_TransLookUp.002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "Turtle_LookUp",
+        "frames": [
+          "Turtle_LookUp.000",
+          "Turtle_LookUp.001",
+          "Turtle_LookUp.002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "Turtle_LookUpFlip",
+        "frames": [
+          "Turtle_LookUpFlip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "Turtle_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "Turtle_Crouch_Down",
+        "frames": [
+          "Turtle_TransCrouch.000",
+          "Turtle_TransCrouch.001",
+          "Turtle_TransCrouch.002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "Turtle_Crouch",
+        "frames": [
+          "Turtle_Crouch.000",
+          "Turtle_Crouch.001",
+          "Turtle_Crouch.002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "Turtle_Crouch_Flip",
+        "frames": [
+          "Turtle_Crouch_Flip.000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "Turtle_Crouch_Up",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "Turtle_Walk",
+        "frames": [
+          "Turtle_Walk.000",
+          "Turtle_Walk.001",
+          "Turtle_Walk.002",
+          "Turtle_Walk.003",
+          "Turtle_Walk.004",
+          "Turtle_Walk.005",
+          "Turtle_Walk.006",
+          "Turtle_Walk.007"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "Turtle_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "Run",
+        "clip": "Turtle_Run",
+        "frames": [
+          "Turtle_Run.000",
+          "Turtle_Run.001",
+          "Turtle_Run.002",
+          "Turtle_Run.003",
+          "Turtle_Run.004",
+          "Turtle_Run.005"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "Turtle_RunToJump",
+        "frames": [
+          "Turtle_RunToJump.000",
+          "Turtle_RunToJump.001"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "Turtle_JumpGoingUp",
+        "frames": [
+          "Turtle_JumpGoingUp.000",
+          "Turtle_JumpGoingUp.001",
+          "Turtle_JumpGoingUp.002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "Turtle_UpToTop",
+        "frames": [
+          "Turtle_UpToTop.000",
+          "Turtle_UpToTop.001"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "Turtle_JumpTop",
+        "frames": [
+          "Turtle_JumpTop.000",
+          "Turtle_JumpTop.001",
+          "Turtle_JumpTop.002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "Turtle_Jump_Flip",
+        "frames": [
+          "Turtle_Jump_Flip.000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "Turtle_TopToDown",
+        "frames": [
+          "Turtle_TopToDown.000",
+          "Turtle_TopToDown.001"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "Turtle_JumpGoingDown",
+        "frames": [
+          "Turtle_JumpGoingDown.000",
+          "Turtle_JumpGoingDown.001",
+          "Turtle_JumpGoingDown.002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "Turtle_LandingSoft",
+        "frames": [
+          "Turtle_LandingSoft.000",
+          "Turtle_LandingSoft.001",
+          "Turtle_LandingSoft.002"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "Turtle_LandingSoft_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "Turtle_Jump_TransTopToSlide",
+        "frames": [
+          "Turtle_Jump_TransTopToSlide.000",
+          "Turtle_Jump_TransTopToSlide.001"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "Turtle_Slide",
+        "frames": [
+          "Turtle_Slide.000",
+          "Turtle_Slide.001",
+          "Turtle_Slide.002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "Turtle_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "Turtle_Slide_ToJumpUpTwist",
+        "frames": [
+          "Turtle_Slide_ToJumpUpTwist.000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "Turtle_Jump_TransToSlideOtherDirection",
+        "frames": [
+          "Turtle_Jump_TransToSlideOtherDirection.000",
+          "Turtle_Jump_TransToSlideOtherDirection.001"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "Turtle_Slide_ToJump",
+        "frames": [
+          "Turtle_Slide_ToJump.000",
+          "Turtle_Slide_ToJump.001"
+        ]
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "Turtle_Slide_ToGroundMirror",
+        "frames": [
+          "Turtle_Slide_ToGroundMirror.000",
+          "Turtle_Slide_ToGroundMirror.001"
+        ]
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "Turtle_Slide_ToGround",
+        "frames": [
+          "Turtle_Slide_ToGround.000",
+          "Turtle_Slide_ToGround.001"
+        ]
+      },
+      {
+        "state": "DeadShock",
+        "clip": "Turtle_DeathShock",
+        "frames": [
+          "Turtle_DeathShock.000",
+          "Turtle_DeathShock.001",
+          "Turtle_DeathShock.002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "Turtle_DeathShock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "Turtle_Dead_Rise",
+        "frames": [
+          "Turtle_Dead_Rise.000",
+          "Turtle_Dead_Rise.001",
+          "Turtle_Dead_Rise.002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "Turtle_Dead_MidToRise",
+        "frames": [
+          "Turtle_Dead_MidToRise.000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "Turtle_Dead_Mid",
+        "frames": [
+          "Turtle_Dead_Mid.000",
+          "Turtle_Dead_Mid.001",
+          "Turtle_Dead_Mid.002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "Turtle_Dead_FallToMid",
+        "frames": [
+          "Turtle_Dead_FallToMid.000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "Turtle_Dead_Fall",
+        "frames": [
+          "Turtle_Dead_Fall.000",
+          "Turtle_Dead_Fall.001",
+          "Turtle_Dead_Fall.002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "Turtle_Dying",
+        "frames": [
+          "Turtle_Dying.000",
+          "Turtle_Dying.001",
+          "Turtle_Dying.002"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "Turtle_Dead",
+        "frames": [
+          "Turtle_Dead.000"
+        ]
+      },
+      {
+        "state": "Dance",
+        "clip": "Turtle_Victory",
+        "frames": [
+          "Turtle_Victory.000",
+          "Turtle_Victory.001",
+          "Turtle_Victory.002",
+          "Turtle_Victory.003",
+          "Turtle_Victory.004",
+          "Turtle_Victory.005",
+          "Turtle_Victory.006",
+          "Turtle_Victory.007",
+          "Turtle_Victory.008",
+          "Turtle_Victory.009",
+          "Turtle_Victory.010",
+          "Turtle_Victory.011",
+          "Turtle_Victory.012",
+          "Turtle_Victory.013"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "Turtle_Victory_Flip",
+        "frames": [
+          "Turtle_Victory_Flip.000"
+        ]
+      },
+      {
+        "state": "Sit",
+        "clip": "Turtle_Couch",
+        "frames": [
+          "Turtle_Couch.000",
+          "Turtle_Couch.001",
+          "Turtle_Couch.002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "Turtle_Cursor.000",
+      "Bad Cursor": "Turtle_Cursor.001",
+      "Notebook Cursor": "Turtle_Cursor.002",
+      "Portrait": "Turtle_Portrait.000"
+    },
+    "unused_frames": [],
+    "frame_states": {
+      "Turtle_Idle.000": [
+        "Idle",
+        "toIdle"
+      ],
+      "Turtle_Idle.001": [
+        "Idle",
+        "toIdle"
+      ],
+      "Turtle_TransLookUp.000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Turtle_TransLookUp.001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Turtle_TransLookUp.002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Turtle_TransCrouch.000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Turtle_TransCrouch.001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Turtle_TransCrouch.002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Turtle_Jump_Flip.000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Turtle_LandingSoft.000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Turtle_LandingSoft.001": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Turtle_LandingSoft.002": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Turtle_DeathShock.000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Turtle_DeathShock.001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Turtle_DeathShock.002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ]
+    },
+    "outfit_metadata": {
+      "armadillo_": {
+        "BehindLayer": false,
+        "LayerNumber": -1
+      },
+      "trojanhelmet_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 0
+      },
+      "ninja_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "pirate_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      }
+    }
+  },
+  {
+    "label": "Panda",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "Panda_Idle",
+        "frames": [
+          "Panda_Idle.000",
+          "Panda_Idle.001",
+          "Panda_Idle.002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "Panda_Flip",
+        "frames": [
+          "Panda_Flip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "Panda_LookUp_GoingUp",
+        "frames": [
+          "Panda_TransLookUp.000",
+          "Panda_TransLookUp.001",
+          "Panda_TransLookUp.002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "Panda_LookUp",
+        "frames": [
+          "Panda_LookUp.000",
+          "Panda_LookUp.001",
+          "Panda_LookUp.002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "Panda_LookUpFlip",
+        "frames": [
+          "Panda_LookUpFlip.000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "Panda_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "Panda_Crouch_Down",
+        "frames": [
+          "Panda_TransCrouch.000",
+          "Panda_TransCrouch.001",
+          "Panda_TransCrouch.002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "Panda_Crouch",
+        "frames": [
+          "Panda_Crouch.000",
+          "Panda_Crouch.001",
+          "Panda_Crouch.002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "Panda_Crouch_Flip",
+        "frames": [
+          "Panda_Crouch_Flip.000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "Panda_Crouch_Up",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "Panda_Walk",
+        "frames": [
+          "Panda_Walk.000",
+          "Panda_Walk.001",
+          "Panda_Walk.002",
+          "Panda_Walk.003",
+          "Panda_Walk.004",
+          "Panda_Walk.005",
+          "Panda_Walk.006",
+          "Panda_Walk.007"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "Panda_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "Run",
+        "clip": "Panda_Run",
+        "frames": [
+          "Panda_Run.000",
+          "Panda_Run.001",
+          "Panda_Run.002",
+          "Panda_Run.003",
+          "Panda_Run.004",
+          "Panda_Run.005"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "Panda_RunToJump",
+        "frames": [
+          "Panda_RunToJump.000"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "Panda_JumpGoingUp",
+        "frames": [
+          "Panda_JumpGoingUp.000",
+          "Panda_JumpGoingUp.001",
+          "Panda_JumpGoingUp.002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "Panda_UpToTop",
+        "frames": [
+          "Panda_UpToTop.000",
+          "Panda_UpToTop.001"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "Panda_JumpTop",
+        "frames": [
+          "Panda_JumpTop.000",
+          "Panda_JumpTop.001",
+          "Panda_JumpTop.002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "Panda_Jump_Flip",
+        "frames": [
+          "Panda_Jump_Flip.000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "Panda_TopToDown",
+        "frames": [
+          "Panda_TopToDown.000",
+          "Panda_TopToDown.001"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "Panda_JumpGoingDown",
+        "frames": [
+          "Panda_JumpGoingDown.000",
+          "Panda_JumpGoingDown.001",
+          "Panda_JumpGoingDown.002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "Panda_LandingSoft",
+        "frames": [
+          "Panda_LandingSoft.000"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "Panda_LandingSoft_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "Panda_Jump_TransTopToSlide",
+        "frames": [
+          "Panda_Jump_TransTopToSlide.000",
+          "Panda_Jump_TransTopToSlide.001"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "Panda_Slide",
+        "frames": [
+          "Panda_Slide.000",
+          "Panda_Slide.001",
+          "Panda_Slide.002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "Panda_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "Panda_Slide_ToJumpUpTwist",
+        "frames": [
+          "Panda_Slide_ToJumpUpTwist.000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "Panda_Jump_TransToSlideOtherDirection",
+        "frames": [
+          "Panda_Jump_TransToSlideOtherDirection.000",
+          "Panda_Jump_TransToSlideOtherDirection.001"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "Panda_Slide_ToJump",
+        "frames": [
+          "Panda_Slide_ToJump.000",
+          "Panda_Slide_ToJump.001"
+        ]
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "Panda_Slide_ToGroundMirror",
+        "frames": [
+          "Panda_Slide_ToGroundMirror.000",
+          "Panda_Slide_ToGroundMirror.001"
+        ]
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "Panda_Slide_ToGround",
+        "frames": [
+          "Panda_Slide_ToGround.000",
+          "Panda_Slide_ToGround.001"
+        ]
+      },
+      {
+        "state": "DeadShock",
+        "clip": "Panda_DeathShock",
+        "frames": [
+          "Panda_DeathShock.000",
+          "Panda_DeathShock.001",
+          "Panda_DeathShock.002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "Panda_DeathShock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "Panda_Dead_Rise",
+        "frames": [
+          "Panda_Dead_Rise.000",
+          "Panda_Dead_Rise.001",
+          "Panda_Dead_Rise.002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "Panda_Dead_MidToRise",
+        "frames": [
+          "Panda_Dead_MidToRise.000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "Panda_Dead_Mid",
+        "frames": [
+          "Panda_Dead_Mid.000",
+          "Panda_Dead_Mid.001",
+          "Panda_Dead_Mid.002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "Panda_Dead_FallToMid",
+        "frames": [
+          "Panda_Dead_FallToMid.000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "Panda_Dead_Fall",
+        "frames": [
+          "Panda_Dead_Fall.000",
+          "Panda_Dead_Fall.001",
+          "Panda_Dead_Fall.002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "Panda_Dying",
+        "frames": [
+          "Panda_Dying.000",
+          "Panda_Dying.001",
+          "Panda_Dying.002"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "Panda_Dead",
+        "frames": [
+          "Panda_Dead.000"
+        ]
+      },
+      {
+        "state": "Dance",
+        "clip": "Panda_Victory",
+        "frames": [
+          "Panda_Victory.000",
+          "Panda_Victory.001",
+          "Panda_Victory.002",
+          "Panda_Victory.003",
+          "Panda_Victory.004",
+          "Panda_Victory.005",
+          "Panda_Victory.006",
+          "Panda_Victory.007",
+          "Panda_Victory.008",
+          "Panda_Victory.009",
+          "Panda_Victory.010",
+          "Panda_Victory.011",
+          "Panda_Victory.012",
+          "Panda_Victory.013",
+          "Panda_Victory.014",
+          "Panda_Victory.015",
+          "Panda_Victory.016",
+          "Panda_Victory.017",
+          "Panda_Victory.018",
+          "Panda_Victory.019",
+          "Panda_Victory.020",
+          "Panda_Victory.021"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "Panda_Victory_Flip",
+        "frames": [
+          "Panda_Victory_Flip.000"
+        ]
+      },
+      {
+        "state": "Sit",
+        "clip": "Panda_Couch",
+        "frames": [
+          "Panda_Couch.000",
+          "Panda_Couch.001",
+          "Panda_Couch.002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "Panda_Cursor.000",
+      "Bad Cursor": "Panda_Cursor.001",
+      "Notebook Cursor": "Panda_Cursor.002",
+      "Portrait": "Panda_Portrait.000"
+    },
+    "unused_frames": [],
+    "frame_states": {
+      "Panda_Idle.000": [
+        "Idle",
+        "toIdle"
+      ],
+      "Panda_Idle.001": [
+        "Idle",
+        "toIdle"
+      ],
+      "Panda_TransLookUp.000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Panda_TransLookUp.001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Panda_TransLookUp.002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Panda_TransCrouch.000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Panda_TransCrouch.001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Panda_TransCrouch.002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Panda_Jump_Flip.000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Panda_LandingSoft.000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Panda_DeathShock.000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Panda_DeathShock.001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Panda_DeathShock.002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ]
+    },
+    "outfit_metadata": {
+      "bear_": {
+        "BehindLayer": false,
+        "LayerNumber": -1
+      },
+      "mailbag_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "mailhat_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "vikinghelmet_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "viking_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 3
+      }
+    }
+  },
+  {
+    "label": "Fox",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "Fox_Idle",
+        "frames": [
+          "Fox_Idle_000",
+          "Fox_Idle_001",
+          "Fox_Idle_002"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "Fox_Flip",
+        "frames": [
+          "Fox_Flip_000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "Fox_LookUp_GoingUp",
+        "frames": [
+          "Fox_TransLookUp_000",
+          "Fox_TransLookUp_001",
+          "Fox_TransLookUp_002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "Fox_LookUp",
+        "frames": [
+          "Fox_LookUp_000",
+          "Fox_LookUp_001",
+          "Fox_LookUp_002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "Fox_LookUpFlip",
+        "frames": [
+          "Fox_LookUpFlip_000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "Fox_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "Fox_Crouch_Down",
+        "frames": [
+          "Fox_TransCrouch_000",
+          "Fox_TransCrouch_001",
+          "Fox_TransCrouch_002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "Fox_Crouch",
+        "frames": [
+          "Fox_Crouch_000",
+          "Fox_Crouch_001",
+          "Fox_Crouch_002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "Fox_Crouch_Flip",
+        "frames": [
+          "Fox_Crouch_Flip_000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "Fox_Crouch_Up",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "Fox_Walk",
+        "frames": [
+          "Fox_Walk_000",
+          "Fox_Walk_001",
+          "Fox_Walk_002",
+          "Fox_Walk_003",
+          "Fox_Walk_004",
+          "Fox_Walk_005",
+          "Fox_Walk_006",
+          "Fox_Walk_007",
+          "Fox_Walk_008",
+          "Fox_Walk_009"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "Fox_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "Run",
+        "clip": "Fox_Run",
+        "frames": [
+          "Fox_Run_000",
+          "Fox_Run_001",
+          "Fox_Run_002",
+          "Fox_Run_003",
+          "Fox_Run_004",
+          "Fox_Run_005"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "Fox_RunToJump",
+        "frames": [
+          "Fox_RunToJump_000",
+          "Fox_RunToJump_001"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "Fox_JumpGoingUp",
+        "frames": [
+          "Fox_JumpGoingUp_000",
+          "Fox_JumpGoingUp_001",
+          "Fox_JumpGoingUp_002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "Fox_UpToTop",
+        "frames": [
+          "Fox_UpToTop_000",
+          "Fox_UpToTop_001"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "Fox_JumpTop",
+        "frames": [
+          "Fox_JumpTop_000",
+          "Fox_JumpTop_001",
+          "Fox_JumpTop_002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "Fox_Jump_Flip",
+        "frames": [
+          "Fox_Jump_Flip_000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "Fox_TopToDown",
+        "frames": [
+          "Fox_TopToDown_000",
+          "Fox_TopToDown_001"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "Fox_JumpGoingDown",
+        "frames": [
+          "Fox_JumpGoingDown_000",
+          "Fox_JumpGoingDown_001",
+          "Fox_JumpGoingDown_002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "Fox_LandingSoft",
+        "frames": [
+          "Fox_LandingSoft_000",
+          "Fox_LandingSoft_001",
+          "Fox_LandingSoft_002"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "Fox_LandingSoft_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "Fox_Jump_TransTopToSlide",
+        "frames": [
+          "Fox_Jump_TransTopToSlide_000",
+          "Fox_Jump_TransTopToSlide_001"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "Fox_Slide",
+        "frames": [
+          "Fox_Slide_000",
+          "Fox_Slide_001",
+          "Fox_Slide_002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "Fox_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "Fox_Slide_ToJumpUpTwist",
+        "frames": [
+          "Fox_Slide_ToJumpUpTwist_000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "Fox_Jump_TransToSlideOtherDirection",
+        "frames": [
+          "Fox_Jump_TransToSlideOtherDirection_000",
+          "Fox_Jump_TransToSlideOtherDirection_001"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "Fox_Slide_ToJump",
+        "frames": [
+          "Fox_Slide_ToJump_000",
+          "Fox_Slide_ToJump_001"
+        ]
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "Fox_Slide_ToGroundMirror",
+        "frames": [
+          "Fox_Slide_ToGroundMirror_000",
+          "Fox_Slide_ToGroundMirror_001"
+        ]
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "Fox_Slide_ToGround",
+        "frames": [
+          "Fox_Slide_ToGround_000"
+        ]
+      },
+      {
+        "state": "DeadShock",
+        "clip": "Fox_DeathShock",
+        "frames": [
+          "Fox_DeathShock_000",
+          "Fox_DeathShock_001",
+          "Fox_DeathShock_002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "Fox_DeathShock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "Fox_Dead_Rise",
+        "frames": [
+          "Fox_Dead_Rise_000",
+          "Fox_Dead_Rise_001",
+          "Fox_Dead_Rise_002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "Fox_Dead_MidToRise",
+        "frames": [
+          "Fox_Dead_MidToRise_000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "Fox_Dead_Mid",
+        "frames": [
+          "Fox_Dead_Mid_000",
+          "Fox_Dead_Mid_001",
+          "Fox_Dead_Mid_002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "Fox_Dead_FallToMid",
+        "frames": [
+          "Fox_Dead_FallToMid_000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "Fox_Dead_Fall",
+        "frames": [
+          "Fox_Dead_Fall_000",
+          "Fox_Dead_Fall_001",
+          "Fox_Dead_Fall_002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "Fox_Dying",
+        "frames": [
+          "Fox_Dying_000",
+          "Fox_Dying_001",
+          "Fox_Dying_002"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "Fox_Dead",
+        "frames": [
+          "Fox_Dead_000"
+        ]
+      },
+      {
+        "state": "Dance",
+        "clip": "Fox_Victory",
+        "frames": [
+          "Fox_Victory_000",
+          "Fox_Victory_001",
+          "Fox_Victory_002",
+          "Fox_Victory_003",
+          "Fox_Victory_004",
+          "Fox_Victory_005",
+          "Fox_Victory_006",
+          "Fox_Victory_007",
+          "Fox_Victory_008",
+          "Fox_Victory_009",
+          "Fox_Victory_010",
+          "Fox_Victory_011",
+          "Fox_Victory_012",
+          "Fox_Victory_013",
+          "Fox_Victory_014",
+          "Fox_Victory_015",
+          "Fox_Victory_016",
+          "Fox_Victory_017",
+          "Fox_Victory_018",
+          "Fox_Victory_019",
+          "Fox_Victory_020",
+          "Fox_Victory_021",
+          "Fox_Victory_022",
+          "Fox_Victory_023",
+          "Fox_Victory_024",
+          "Fox_Victory_025",
+          "Fox_Victory_026",
+          "Fox_Victory_027",
+          "Fox_Victory_028",
+          "Fox_Victory_029"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "Fox_Victory_Flip",
+        "frames": [
+          "Fox_Victory_Flip_000"
+        ]
+      },
+      {
+        "state": "Sit",
+        "clip": "Fox_Couch",
+        "frames": [
+          "Fox_Couch_000",
+          "Fox_Couch_001",
+          "Fox_Couch_002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "Fox_Cursor_000",
+      "Bad Cursor": "Fox_Cursor_001",
+      "Notebook Cursor": "Fox_Cursor_002",
+      "Portrait": "Fox_Portrait_000"
+    },
+    "unused_frames": [
+      "Fox_Slide_ToGround_001"
+    ],
+    "frame_states": {
+      "Fox_Idle_000": [
+        "Idle",
+        "toIdle"
+      ],
+      "Fox_Idle_001": [
+        "Idle",
+        "toIdle"
+      ],
+      "Fox_TransLookUp_000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Fox_TransLookUp_001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Fox_TransLookUp_002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Fox_TransCrouch_000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Fox_TransCrouch_001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Fox_TransCrouch_002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Fox_Jump_Flip_000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Fox_LandingSoft_000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Fox_LandingSoft_001": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Fox_LandingSoft_002": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Fox_DeathShock_000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Fox_DeathShock_001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Fox_DeathShock_002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ]
+    },
+    "outfit_metadata": {
+      "headband_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "direwolf_": {
+        "BehindLayer": false,
+        "LayerNumber": 0
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 4
+      },
+      "scarf_": {
+        "BehindLayer": false,
+        "LayerNumber": 2
+      },
+      "firetail_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      }
+    }
+  },
+  {
+    "label": "Platypus",
+    "states": [
+      {
+        "state": "Idle",
+        "clip": "Platypus_Idle",
+        "frames": [
+          "Platypus_Idle_000",
+          "Platypus_Idle_001"
+        ]
+      },
+      {
+        "state": "Flip",
+        "clip": "Platypus_Flip",
+        "frames": [
+          "Platypus_Flip_000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingUp",
+        "clip": "Platypus_LookUp_GoingUp",
+        "frames": [
+          "Platypus_TransLookUp_000",
+          "Platypus_TransLookUp_001",
+          "Platypus_TransLookUp_002"
+        ]
+      },
+      {
+        "state": "LookUp",
+        "clip": "Platypus_LookUp",
+        "frames": [
+          "Platypus_LookUp_000",
+          "Platypus_LookUp_001",
+          "Platypus_LookUp_002"
+        ]
+      },
+      {
+        "state": "Lookup_Flip",
+        "clip": "Platypus_LookUpFlip",
+        "frames": [
+          "Platypus_LookUpFlip_000"
+        ]
+      },
+      {
+        "state": "LookUp_GoingDown",
+        "clip": "Platypus_LookUp_GoingDown",
+        "frames": []
+      },
+      {
+        "state": "CrouchDown",
+        "clip": "Platypus_Crouch_Down",
+        "frames": [
+          "Platypus_TransCrouch_000",
+          "Platypus_TransCrouch_001",
+          "Platypus_TransCrouch_002"
+        ]
+      },
+      {
+        "state": "Crouch",
+        "clip": "Platypus_Crouch",
+        "frames": [
+          "Platypus_Crouch_000",
+          "Platypus_Crouch_001",
+          "Platypus_Crouch_002"
+        ]
+      },
+      {
+        "state": "CrouchFlip",
+        "clip": "Platypus_Crouch_Flip",
+        "frames": [
+          "Platypus_Crouch_Flip_000"
+        ]
+      },
+      {
+        "state": "CrouchUp",
+        "clip": "Platypus_Crouch_Up",
+        "frames": []
+      },
+      {
+        "state": "Walk",
+        "clip": "Platypus_Walk",
+        "frames": [
+          "Platypus_Walk_000",
+          "Platypus_Walk_001",
+          "Platypus_Walk_002",
+          "Platypus_Walk_003",
+          "Platypus_Walk_004",
+          "Platypus_Walk_005",
+          "Platypus_Walk_006",
+          "Platypus_Walk_007",
+          "Platypus_Walk_008",
+          "Platypus_Walk_009"
+        ]
+      },
+      {
+        "state": "toIdle",
+        "clip": "Platypus_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "Run",
+        "clip": "Platypus_Run",
+        "frames": [
+          "Platypus_Run_000",
+          "Platypus_Run_001",
+          "Platypus_Run_002",
+          "Platypus_Run_003",
+          "Platypus_Run_004",
+          "Platypus_Run_005",
+          "Platypus_Run_006",
+          "Platypus_Run_007"
+        ]
+      },
+      {
+        "state": "StartJump",
+        "clip": "Platypus_RunToJump",
+        "frames": [
+          "Platypus_RunToJump_000",
+          "Platypus_RunToJump_001"
+        ]
+      },
+      {
+        "state": "Rising",
+        "clip": "Platypus_JumpGoingUp",
+        "frames": [
+          "Platypus_JumpGoingUp_000",
+          "Platypus_JumpGoingUp_001",
+          "Platypus_JumpGoingUp_002"
+        ]
+      },
+      {
+        "state": "TransUpToTop",
+        "clip": "Platypus_UpToTop",
+        "frames": [
+          "Platypus_UpToTop_000",
+          "Platypus_UpToTop_001"
+        ]
+      },
+      {
+        "state": "Peak",
+        "clip": "Platypus_JumpTop",
+        "frames": [
+          "Platypus_JumpTop_000",
+          "Platypus_JumpTop_001",
+          "Platypus_JumpTop_002"
+        ]
+      },
+      {
+        "state": "Jump Flip",
+        "clip": "Platypus_Jump_Flip",
+        "frames": [
+          "Platypus_Jump_Flip_000"
+        ]
+      },
+      {
+        "state": "PeakToDown",
+        "clip": "Platypus_TopToDown",
+        "frames": [
+          "Platypus_TopToDown_000",
+          "Platypus_TopToDown_001"
+        ]
+      },
+      {
+        "state": "Falling",
+        "clip": "Platypus_JumpGoingDown",
+        "frames": [
+          "Platypus_JumpGoingDown_000",
+          "Platypus_JumpGoingDown_001",
+          "Platypus_JumpGoingDown_002"
+        ]
+      },
+      {
+        "state": "JumpLand",
+        "clip": "Platypus_LandingSoft",
+        "frames": [
+          "Platypus_LandingSoft_000",
+          "Platypus_LandingSoft_001",
+          "Platypus_LandingSoft_002"
+        ]
+      },
+      {
+        "state": "JumpLand To Idle",
+        "clip": "Platypus_LandingSoft_ToIdle",
+        "frames": []
+      },
+      {
+        "state": "TransToSlide",
+        "clip": "Platypus_Jump_TransTopToSlide",
+        "frames": [
+          "Platypus_Jump_TransTopToSlide_000",
+          "Platypus_Jump_TransTopToSlide_001"
+        ]
+      },
+      {
+        "state": "Slide",
+        "clip": "Platypus_Slide",
+        "frames": [
+          "Platypus_Slide_000",
+          "Platypus_Slide_001",
+          "Platypus_Slide_002"
+        ]
+      },
+      {
+        "state": "SlideFlip",
+        "clip": "Platypus_Jump_Flip",
+        "frames": []
+      },
+      {
+        "state": "WallSlideToJumpUpTwist",
+        "clip": "Platypus_Slide_ToJumpUpTwist",
+        "frames": [
+          "Platypus_Slide_ToJumpUpTwist_000"
+        ]
+      },
+      {
+        "state": "TransToSlideOpposite",
+        "clip": "Platypus_Jump_TransToSlideOtherDirection",
+        "frames": [
+          "Platypus_Jump_TransToSlideOtherDirection_000",
+          "Platypus_Jump_TransToSlideOtherDirection_001"
+        ]
+      },
+      {
+        "state": "SlideToJump",
+        "clip": "Platypus_Slide_ToJump",
+        "frames": [
+          "Platypus_Slide_ToJump_000",
+          "Platypus_Slide_ToJump_001"
+        ]
+      },
+      {
+        "state": "SlideToGroundMirror",
+        "clip": "Platypus_Slide_ToGroundMirror",
+        "frames": [
+          "Platypus_Slide_ToGroundMirror_000",
+          "Platypus_Slide_ToGroundMirror_001"
+        ]
+      },
+      {
+        "state": "SlideToGroundTwist",
+        "clip": "Platypus_Slide_ToGround",
+        "frames": [
+          "Platypus_Slide_ToGround_000",
+          "Platypus_Slide_ToGround_001"
+        ]
+      },
+      {
+        "state": "DeadShock",
+        "clip": "Platypus_DeathShock",
+        "frames": [
+          "Platypus_DeathShock_000",
+          "Platypus_DeathShock_001",
+          "Platypus_DeathShock_002"
+        ]
+      },
+      {
+        "state": "DeadShock Forced",
+        "clip": "Platypus_DeathShock",
+        "frames": []
+      },
+      {
+        "state": "Dead_Rise",
+        "clip": "Platypus_Dead_Rise",
+        "frames": [
+          "Platypus_Dead_Rise_000",
+          "Platypus_Dead_Rise_001",
+          "Platypus_Dead_Rise_002"
+        ]
+      },
+      {
+        "state": "Dead_MidToRise",
+        "clip": "Platypus_Dead_MidToRise",
+        "frames": [
+          "Platypus_Dead_MidToRise_000"
+        ]
+      },
+      {
+        "state": "Dead_Mid",
+        "clip": "Platypus_Dead_Mid",
+        "frames": [
+          "Platypus_Dead_Mid_000",
+          "Platypus_Dead_Mid_001",
+          "Platypus_Dead_Mid_002"
+        ]
+      },
+      {
+        "state": "Dead_FallToMid",
+        "clip": "Platypus_Dead_FallToMid",
+        "frames": [
+          "Platypus_Dead_FallToMid_000"
+        ]
+      },
+      {
+        "state": "Dead_Fall",
+        "clip": "Platypus_Dead_Fall",
+        "frames": [
+          "Platypus_Dead_Fall_000",
+          "Platypus_Dead_Fall_001",
+          "Platypus_Dead_Fall_002"
+        ]
+      },
+      {
+        "state": "Dying",
+        "clip": "Platypus_Dying",
+        "frames": [
+          "Platypus_Dying_000",
+          "Platypus_Dying_001",
+          "Platypus_Dying_002"
+        ]
+      },
+      {
+        "state": "DeadPause",
+        "clip": "Platypus_Dead",
+        "frames": [
+          "Platypus_Dead_000"
+        ]
+      },
+      {
+        "state": "Dance",
+        "clip": "Platypus_Victory",
+        "frames": [
+          "Platypus_Victory_000",
+          "Platypus_Victory_001",
+          "Platypus_Victory_002",
+          "Platypus_Victory_003",
+          "Platypus_Victory_004",
+          "Platypus_Victory_005",
+          "Platypus_Victory_006",
+          "Platypus_Victory_007",
+          "Platypus_Victory_008",
+          "Platypus_Victory_009",
+          "Platypus_Victory_010",
+          "Platypus_Victory_011",
+          "Platypus_Victory_012",
+          "Platypus_Victory_013",
+          "Platypus_Victory_014",
+          "Platypus_Victory_015",
+          "Platypus_Victory_016",
+          "Platypus_Victory_017",
+          "Platypus_Victory_018",
+          "Platypus_Victory_019",
+          "Platypus_Victory_020",
+          "Platypus_Victory_021",
+          "Platypus_Victory_022",
+          "Platypus_Victory_023",
+          "Platypus_Victory_024",
+          "Platypus_Victory_025",
+          "Platypus_Victory_026",
+          "Platypus_Victory_027",
+          "Platypus_Victory_028",
+          "Platypus_Victory_029"
+        ]
+      },
+      {
+        "state": "Dance Flip",
+        "clip": "Platypus_Victory_Flip",
+        "frames": []
+      },
+      {
+        "state": "Sit",
+        "clip": "Platypus_Couch",
+        "frames": [
+          "Platypus_Couch_000",
+          "Platypus_Couch_001",
+          "Platypus_Couch_002"
+        ]
+      }
+    ],
+    "cursor_portrait": {
+      "OK Cursor": "Platypus_Cursor_000",
+      "Bad Cursor": "Platypus_Cursor_001",
+      "Notebook Cursor": "Platypus_Cursor_002",
+      "Portrait": "Platypus_Portrait_000"
+    },
+    "unused_frames": [
+      "Platypus_Idle_002"
+    ],
+    "frame_states": {
+      "Platypus_Idle_000": [
+        "Idle",
+        "toIdle"
+      ],
+      "Platypus_Idle_001": [
+        "Idle",
+        "toIdle"
+      ],
+      "Platypus_TransLookUp_000": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Platypus_TransLookUp_001": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Platypus_TransLookUp_002": [
+        "LookUp_GoingUp",
+        "LookUp_GoingDown"
+      ],
+      "Platypus_TransCrouch_000": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Platypus_TransCrouch_001": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Platypus_TransCrouch_002": [
+        "CrouchDown",
+        "CrouchUp"
+      ],
+      "Platypus_Jump_Flip_000": [
+        "Jump Flip",
+        "SlideFlip"
+      ],
+      "Platypus_LandingSoft_000": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Platypus_LandingSoft_001": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Platypus_LandingSoft_002": [
+        "JumpLand",
+        "JumpLand To Idle"
+      ],
+      "Platypus_DeathShock_000": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Platypus_DeathShock_001": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Platypus_DeathShock_002": [
+        "DeadShock",
+        "DeadShock Forced"
+      ],
+      "Platypus_Victory_029": [
+        "Dance",
+        "Dance Flip"
+      ]
+    },
+    "outfit_metadata": {
+      "cape_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "toucan_": {
+        "BehindLayer": false,
+        "LayerNumber": 0
+      },
+      "zombie_": {
+        "BehindLayer": false,
+        "LayerNumber": 3
+      },
+      "pan_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      },
+      "jesterboots_": {
+        "BehindLayer": false,
+        "LayerNumber": 1
+      }
+    }
+  }
+]

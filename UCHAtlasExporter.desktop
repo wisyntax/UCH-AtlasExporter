@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=UCHAtlasExporter
+X-Python-2-Compatible=false
+Name=UCH Atlas Exporter
+Comment=Export a tightly-packed sprite atlas + metadata.svg from the visible canvas of a UCH-UltimateOutfit character document
