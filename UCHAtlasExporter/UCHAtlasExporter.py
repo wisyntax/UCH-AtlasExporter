@@ -59,7 +59,7 @@ BUNDLED_ANIM_STATES_JSON = os.path.join(PLUGIN_DIR, "AllCharacterAnimStates.json
 CANVAS_SIZE = 650  # fallback only - real runs use the active document's width
 DEFAULT_ATLAS_PADDING = 1
 DEFAULT_PIXELS_PER_UNIT = 210  # matches the game's standard sprite PPU
-PLUGIN_VERSION = "1.0"  # bump on meaningful changes; shown in the dialog title
+PLUGIN_VERSION = "1.0.1"  # bump on meaningful changes; shown in the dialog title
 MAX_SANE_ATLAS_DIMENSION = 8192  # see pick_better_packing()
 # ------------------------------------------------
 
@@ -907,7 +907,7 @@ def run_export(doc, settings):
             )
 
     svg_lines.append(
-        f'  <image xlink:href="{image_filename}" pixelsPerUnit="{settings["pixels_per_unit"]}" id="image" sodipodi:insensitive="true" />'
+        f'  <image xlink:href="{image_filename}" pixelsPerUnit="{settings["pixels_per_unit"]}" id="{label}" sodipodi:insensitive="true" />'
     )
     svg_lines.append("</svg>")
     metadata_svg = "\n".join(svg_lines)
