@@ -18,12 +18,15 @@ Pipeline:
   2. Capture each in-range frame's visible canvas content.
   3. Compute each frame's tight content bounding box (full canvas if Trim
      is off).
-  4. Pack boxes into one atlas (Shelf, MaxRects, or Auto - tries both,
+  4. Detect frames whose trimmed content is pixel-for-pixel identical and
+     merge them, so only one copy of that content needs to be packed.
+  5. Pack boxes into one atlas (Shelf, MaxRects, or Auto - tries both,
      keeps the smaller).
-  5. Compute each frame's Sprite pivot as a fraction of its packed crop box.
-  6. Render the atlas PNG and metadata.svg.
+  6. Compute each frame's Sprite pivot as a fraction of its packed crop box.
+  7. Render the atlas PNG and metadata.svg.
 """
 
+import hashlib
 import json
 import math
 import os
@@ -59,7 +62,7 @@ BUNDLED_ANIM_STATES_JSON = os.path.join(PLUGIN_DIR, "AllCharacterAnimStates.json
 CANVAS_SIZE = 650  # fallback only - real runs use the active document's width
 DEFAULT_ATLAS_PADDING = 1
 DEFAULT_PIXELS_PER_UNIT = 210  # matches the game's standard sprite PPU
-PLUGIN_VERSION = "1.0.1"  # bump on meaningful changes; shown in the dialog title
+PLUGIN_VERSION = "1.1.0"  # bump on meaningful changes; shown in the dialog title
 MAX_SANE_ATLAS_DIMENSION = 8192  # see pick_better_packing()
 # ------------------------------------------------
 
@@ -517,6 +520,16 @@ class TightAtlasExportDialog(QDialog):
         hideLayout.addWidget(self.trimCheck, hrow, 0, 1, 2)
         hrow += 1
 
+        self.dedupCheck = QCheckBox("Merge duplicate frames")
+        self.dedupCheck.setChecked(_SESSION_SETTINGS.get("dedup", True))
+        self.dedupCheck.setToolTip(
+            "Packs pixel-identical frames (e.g. a reused copy-pasted sprite)\n"
+            "into the atlas only once instead of once per frame.\n"
+            "Unchecked: every frame is packed separately."
+        )
+        hideLayout.addWidget(self.dedupCheck, hrow, 0, 1, 2)
+        hrow += 1
+
         self.skipAutoHideCheck = QCheckBox("Don't hide lines and notes layers")
         self.skipAutoHideCheck.setChecked(_SESSION_SETTINGS.get("skip_auto_hide", False))
         self.skipAutoHideCheck.setToolTip(
@@ -604,6 +617,7 @@ class TightAtlasExportDialog(QDialog):
         self.pixelsPerUnitSpin.setValue(DEFAULT_PIXELS_PER_UNIT)
         self.packerCombo.setCurrentText("Auto")
         self.trimCheck.setChecked(True)
+        self.dedupCheck.setChecked(True)
         self.noOverwriteCheck.setChecked(False)
         self.skipAutoHideCheck.setChecked(False)
         self.reset_export_dir()
@@ -699,6 +713,7 @@ class TightAtlasExportDialog(QDialog):
         _SESSION_SETTINGS["pixels_per_unit"] = self.pixelsPerUnitSpin.value()
         _SESSION_SETTINGS["packer_mode"] = self.packerCombo.currentText()
         _SESSION_SETTINGS["trim"] = self.trimCheck.isChecked()
+        _SESSION_SETTINGS["dedup"] = self.dedupCheck.isChecked()
         _SESSION_SETTINGS["no_overwrite"] = self.noOverwriteCheck.isChecked()
         _SESSION_SETTINGS["skip_auto_hide"] = self.skipAutoHideCheck.isChecked()
         _SESSION_SETTINGS["export_dir"] = self.exportDirTx.text().strip()
@@ -720,6 +735,7 @@ class TightAtlasExportDialog(QDialog):
             "frame_start": self.startSpin.value() if custom else 0,
             "frame_end": self.endSpin.value() if custom else (len(build_flat_frame_list(self.char_data_by_label[label])) - 1),
             "trim": self.trimCheck.isChecked() if custom else True,
+            "dedup": self.dedupCheck.isChecked() if custom else True,
             "no_overwrite": self.noOverwriteCheck.isChecked() if custom else False,
             "skip_auto_hide": self.skipAutoHideCheck.isChecked() if custom else False,
             "atlas_name": self.atlasName.text().strip() or self.default_atlas_name(label),
@@ -841,8 +857,31 @@ def run_export(doc, settings):
         if hidden_nodes:
             doc.refreshProjection()
 
+    # DEDUP: group frames by (crop_w, crop_h, sha1 of cropped pixels).
+    # First frame per hash is the representative; later ones map to it in
+    # dup_of and skip packing/painting, but still get their own pivot
+    # below - identical pixels can still sit at different canvas spots.
+    dup_of = {}
+    if settings["dedup"]:
+        seen_hashes = {}
+        for frame_idx in frame_range:
+            crop_x, crop_y, crop_w, crop_h = frame_boxes[frame_idx]
+            crop = frame_images[frame_idx].copy(crop_x, crop_y, crop_w, crop_h)
+            ptr = crop.constBits()
+            ptr.setsize(crop.sizeInBytes())
+            content_hash = (crop_w, crop_h, hashlib.sha1(bytes(ptr)).digest())
+
+            representative = seen_hashes.get(content_hash)
+            if representative is None:
+                seen_hashes[content_hash] = frame_idx
+            else:
+                dup_of[frame_idx] = representative
+
+        if dup_of:
+            print(f"Deduplicated {len(dup_of)} frame(s) with identical content.")
+
     # PHASE 2: pack.
-    box_sizes = {i: (b[2], b[3]) for i, b in frame_boxes.items()}
+    box_sizes = {i: (b[2], b[3]) for i, b in frame_boxes.items() if i not in dup_of}
     padding = settings["padding"]
     mode = settings["packer_mode"]
 
@@ -894,7 +933,7 @@ def run_export(doc, settings):
     for frame_idx in frame_range:
         name = frame_names[frame_idx]
         crop_x, crop_y, crop_w, crop_h = frame_boxes[frame_idx]
-        packed_x, packed_y = positions[frame_idx]
+        packed_x, packed_y = positions[dup_of.get(frame_idx, frame_idx)]
 
         pivot_x = (anchor_x - crop_x) / crop_w
         pivot_y = (crop_y + crop_h - anchor_y) / crop_h
@@ -916,6 +955,8 @@ def run_export(doc, settings):
     atlas_img.fill(0)
     painter = QPainter(atlas_img)
     for frame_idx in frame_range:
+        if frame_idx in dup_of:
+            continue  # duplicate content - its representative already painted this spot
         crop_x, crop_y, crop_w, crop_h = frame_boxes[frame_idx]
         packed_x, packed_y = positions[frame_idx]
         crop = frame_images[frame_idx].copy(crop_x, crop_y, crop_w, crop_h)
@@ -930,6 +971,8 @@ def run_export(doc, settings):
 
     ram_bytes = estimate_texture_ram_bytes(atlas_w, atlas_h)
 
+    dedup_line = f"Merged {len(dup_of)} duplicate frame(s).\n" if dup_of else ""
+
     result_box = QMessageBox()
     result_box.setWindowTitle("Export Atlas")
     result_box.setIcon(QMessageBox.Information)
@@ -937,6 +980,7 @@ def run_export(doc, settings):
         f"{label}: {len(frame_range)} frame(s) exported.\n"
         f"Atlas size: {atlas_w}x{atlas_h}\n"
         f"Packer used: {packer_used}\n"
+        f"{dedup_line}"
         f"Estimated in-game texture memory: {format_bytes(ram_bytes)}\n"
         f"Saved to: {out_dir}"
     )
