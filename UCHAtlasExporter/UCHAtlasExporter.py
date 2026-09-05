@@ -49,6 +49,7 @@ from PyQt5.QtWidgets import (
     QMessageBox,
     QPushButton,
     QSpinBox,
+    QToolButton,
     QVBoxLayout,
 )
 
@@ -62,7 +63,7 @@ BUNDLED_ANIM_STATES_JSON = os.path.join(PLUGIN_DIR, "AllCharacterAnimStates.json
 CANVAS_SIZE = 650  # fallback only - real runs use the active document's width
 DEFAULT_ATLAS_PADDING = 1
 DEFAULT_PIXELS_PER_UNIT = 210  # matches the game's standard sprite PPU
-PLUGIN_VERSION = "1.1.0"  # bump on meaningful changes; shown in the dialog title
+PLUGIN_VERSION = "1.2.0"  # bump on meaningful changes; shown in the dialog title
 MAX_SANE_ATLAS_DIMENSION = 8192  # see pick_better_packing()
 # ------------------------------------------------
 
@@ -73,6 +74,21 @@ MAX_SANE_ATLAS_DIMENSION = 8192  # see pick_better_packing()
 # picked for (see doc_identity_key()) and only reused for that same doc -
 # switching documents re-detects instead of carrying the old pick over.
 _SESSION_SETTINGS = {}
+# ------------------------------------------------
+
+# ---- persistent export-directory lock (survives restarts, unlike _SESSION_SETTINGS) ----
+LOCK_SETTING_GROUP = "UCHAtlasExporter"
+LOCK_SETTING_KEY = "locked_export_dir"
+
+
+def get_locked_export_dir():
+    """Empty string means unlocked. Stored in kritarc via Krita's own settings API"""
+    return Krita.instance().readSetting(LOCK_SETTING_GROUP, LOCK_SETTING_KEY, "")
+
+
+def set_locked_export_dir(path):
+    """Empty string clears the lock."""
+    Krita.instance().writeSetting(LOCK_SETTING_GROUP, LOCK_SETTING_KEY, path)
 # ------------------------------------------------
 
 # ---- shared with build_character_base.py: keeps frame-index alignment ----
@@ -439,6 +455,15 @@ class TightAtlasExportDialog(QDialog):
         self.exportDirResetButt.clicked.connect(self.reset_export_dir)
         dirButtons.addWidget(self.exportDirButt)
         dirButtons.addWidget(self.exportDirResetButt)
+
+        self.lockDirButt = QToolButton()
+        self.lockDirButt.setCheckable(True)
+        self.lockDirButt.setAutoRaise(True)
+        self.lockDirButt.setIcon(Krita.instance().icon("unlocked"))
+        self.lockDirButt.setToolTip("Lock export directory")
+        self.lockDirButt.toggled.connect(self.on_lock_dir_toggled)
+        dirButtons.addWidget(self.lockDirButt)
+
         top.addLayout(dirButtons, row, 1)
         row += 1
 
@@ -565,8 +590,13 @@ class TightAtlasExportDialog(QDialog):
         # even if the user backs out - matches kritaSpritesheetManager.
         self.finished.connect(self.save_session_settings)
 
-        # Persisted export dir wins over the doc-folder default.
-        if "export_dir" in _SESSION_SETTINGS:
+        # A lock wins over everything else - session value, doc-folder
+        # default, all of it.
+        locked_dir = get_locked_export_dir()
+        if locked_dir:
+            self.exportDirTx.setText(locked_dir)
+            self.lockDirButt.setChecked(True)
+        elif "export_dir" in _SESSION_SETTINGS:
             self.exportDirTx.setText(_SESSION_SETTINGS["export_dir"])
         else:
             self.reset_export_dir()
@@ -620,7 +650,8 @@ class TightAtlasExportDialog(QDialog):
         self.dedupCheck.setChecked(True)
         self.noOverwriteCheck.setChecked(False)
         self.skipAutoHideCheck.setChecked(False)
-        self.reset_export_dir()
+        if not self.lockDirButt.isChecked():
+            self.reset_export_dir()
 
         labels = [c["label"] for c in self.all_characters]
         detected_label = self.detect_character_label(self.doc, self.all_characters)
@@ -655,6 +686,15 @@ class TightAtlasExportDialog(QDialog):
             self.exportDirTx.setText(str(Path(self.doc.fileName()).parent))
         else:
             self.exportDirTx.setText(os.path.expanduser("~"))
+
+    def on_lock_dir_toggled(self, checked):
+        self.lockDirButt.setIcon(Krita.instance().icon("locked" if checked else "unlocked"))
+        self.lockDirButt.setToolTip(
+            "Export directory is locked and saved" if checked else "Lock export directory"
+        )
+        self.exportDirTx.setReadOnly(checked)
+        self.exportDirButt.setEnabled(not checked)
+        self.exportDirResetButt.setEnabled(not checked)
 
     def default_atlas_name(self, label):
         # Prefer the doc's .kra filename so saved variants never collide;
@@ -699,6 +739,7 @@ class TightAtlasExportDialog(QDialog):
         if not self.exportDirTx.text().strip():
             QMessageBox.warning(self, "Export Atlas", "Choose an export directory first.")
             return
+        set_locked_export_dir(self.exportDirTx.text().strip() if self.lockDirButt.isChecked() else "")
         self.accept()
 
     def save_session_settings(self, _result=None):
@@ -787,6 +828,20 @@ def resolve_output_dir(save_root, export_name, no_overwrite):
         n += 1
 
 
+def _show_export_dir_error(out_dir, error):
+    """Locked directories can go stale (drive unmounted, permissions
+    changed) - point that out instead of a raw traceback."""
+    locked_note = (
+        "\n\nThe export directory is locked - uncheck the lock icon in "
+        "the export dialog if it needs to change."
+        if get_locked_export_dir() else ""
+    )
+    QMessageBox.critical(
+        None, "Export Atlas",
+        f"Couldn't write to the export directory:\n{out_dir}\n\n{error}{locked_note}"
+    )
+
+
 def run_export(doc, settings):
     label = settings["label"]
     char_data = settings["char_data"]
@@ -799,7 +854,11 @@ def run_export(doc, settings):
     is_subset = start != 0 or end != len(frame_names) - 1
 
     out_dir = resolve_output_dir(settings["export_dir"], settings["export_name"], settings["no_overwrite"])
-    os.makedirs(out_dir, exist_ok=True)
+    try:
+        os.makedirs(out_dir, exist_ok=True)
+    except OSError as e:
+        _show_export_dir_error(out_dir, e)
+        return
 
     raw_atlas_name = settings["atlas_name"].strip() or label
     if raw_atlas_name.lower().endswith(".png"):
@@ -964,10 +1023,14 @@ def run_export(doc, settings):
     painter.end()
 
     atlas_path = os.path.join(out_dir, image_filename)
-    atlas_img.save(atlas_path)
-
-    with open(os.path.join(out_dir, "metadata.svg"), "w", encoding="utf-8") as f:
-        f.write(metadata_svg)
+    try:
+        if not atlas_img.save(atlas_path):
+            raise OSError(f"failed to save {atlas_path}")
+        with open(os.path.join(out_dir, "metadata.svg"), "w", encoding="utf-8") as f:
+            f.write(metadata_svg)
+    except OSError as e:
+        _show_export_dir_error(out_dir, e)
+        return
 
     ram_bytes = estimate_texture_ram_bytes(atlas_w, atlas_h)
 
